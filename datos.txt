@@ -1,0 +1,7 @@
+twitter = Y2CMeLcFhQ
+password = 2cN6iwNO1F?
+
+Necesitaremos el AppID para cada peticion Soap
+EVID: 3a162da6-d529-4ee8-9f1a-c2a1956aebd1
+AppID: esudc4081-73b1-4e54-b06f-8a1f9221949
+CertID: bbdd81e7-66e2-4b34-bd95-7e1db5f8dad0

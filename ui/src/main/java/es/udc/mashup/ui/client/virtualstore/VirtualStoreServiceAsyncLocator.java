@@ -5,17 +5,17 @@ import com.google.gwt.user.client.rpc.ServiceDefTarget;
 
 public class VirtualStoreServiceAsyncLocator {
 
-    private final static String SERVICE_URL_SUFFIX = "VirtualStoreService";
+	private final static String SERVICE_URL_SUFFIX = "VirtualStoreService";
 
-    private VirtualStoreServiceAsyncLocator() {
-    }
+	private VirtualStoreServiceAsyncLocator() {
+	}
 
-    public static VirtualStoreServiceAsync getVirtualStoreServiceAsync() {
-        VirtualStoreServiceAsync service =
-                (VirtualStoreServiceAsync) GWT.create(VirtualStoreService.class);
-        ServiceDefTarget endpoint = (ServiceDefTarget) service;
-        String serviceURL = GWT.getModuleBaseURL() + SERVICE_URL_SUFFIX;
-        endpoint.setServiceEntryPoint(serviceURL);
-        return service;
-    }
+	public static VirtualStoreServiceAsync getVirtualStoreServiceAsync() {
+		VirtualStoreServiceAsync service = (VirtualStoreServiceAsync) GWT
+				.create(VirtualStoreService.class);
+		ServiceDefTarget endpoint = (ServiceDefTarget) service;
+		String serviceURL = GWT.getModuleBaseURL() + SERVICE_URL_SUFFIX;
+		endpoint.setServiceEntryPoint(serviceURL);
+		return service;
+	}
 }

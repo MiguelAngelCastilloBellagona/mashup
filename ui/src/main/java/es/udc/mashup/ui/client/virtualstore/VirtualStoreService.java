@@ -5,13 +5,9 @@ import java.util.List;
 
 public interface VirtualStoreService extends RemoteService {
 
-    public List<ProductJTO> findProducts(String productName,
-                                         String category,
-                                         double minPrice,
-                                         double maxPrice)
-            throws InvalidSearchException;
+	public List<ProductJTO> findProducts(String productName, String category,
+			double minPrice, double maxPrice) throws InvalidSearchException;
 
-    public List<String> findCategories()
-            throws InvalidSearchException;
+	public List<String> findCategories() throws InvalidSearchException;
 
 }
