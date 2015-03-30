@@ -5,8 +5,15 @@ import es.udc.mashup.virtualstore.service.ProductTO;
 import es.udc.mashup.virtualstore.service.VirtualProductProviderService;
 import es.udc.ws.util.exceptions.ServiceException;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.xml.namespace.QName;
+
+import com.ebay.marketplace.search.v1.services.FindingService;
+import com.ebay.marketplace.search.v1.services.FindingServicePortType;
 
 public class MockVirtualProductProviderService implements
 		VirtualProductProviderService {
@@ -130,6 +137,13 @@ public class MockVirtualProductProviderService implements
 			String category, double minPrice, double maxPrice)
 			throws ServiceException {
 		// TODO Auto-generated method stub
+		try {
+			FindingService service = new FindingService(new URL("http://developer.ebay.com/webservices/finding/latest/FindingService.wsdl"), new QName("http://www.ebay.com/marketplace/search/v1/services","FindingService"));
+			FindingServicePortType port = service.getFindingServiceSOAPPort();
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return null;
 	}
 

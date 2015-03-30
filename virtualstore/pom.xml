@@ -37,11 +37,12 @@
 
 	</dependencies>
 	<build>
-	<pluginManagement>
-		<plugins>
+	<plugins>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
+				<!--  <groupId>org.codehaus.mojo</groupId> -->
+				<groupId>org.jvnet.jax-ws-commons</groupId>
 				<artifactId>jaxws-maven-plugin</artifactId>
+				<version>2.3</version>
 				<executions>
 					<execution>
 						<goals>
@@ -50,11 +51,40 @@
 					</execution>
 				</executions>
 				<configuration>
-					<wsdlDirectory>src/main/resources/</wsdlDirectory>
-					<sourceDestDir>src/main/java</sourceDestDir>
+					<wsdlUrl>http://developer.ebay.com/webservices/finding/latest/FindingService.wsdl</wsdlUrl>
+					<!-- <wsdlDirectory>src/main/resources</wsdlDirectory> -->
+					<!-- <sourceDestDir>src/main/java</sourceDestDir> -->
+				</configuration>
+			</plugin>
+			</plugins>	
+			</build>
+</project>
+
+<!-- 
+<build>
+		<pluginManagement>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.jvnet.jax-ws-commons</groupId>
+				<artifactId>jaxws-maven-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>wsimport</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<wsdlUrl>http://developer.ebay.com/webservices/finding/latest/FindingService.wsdl</wsdlUrl>
+					<!--  <wsdlDirectory>src/main/resources</wsdlDirectory> -->
+					<!--  <sourceDestDir>src/main/java</sourceDestDir> -->
 				</configuration>
 			</plugin>
 		</plugins>
-		</pluginManagement>
+
 	</build>
-</project>
+	<pluginRepositories>
+	</pluginRepositories>
+ -->
