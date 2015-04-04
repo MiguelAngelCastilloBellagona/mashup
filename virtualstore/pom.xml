@@ -37,26 +37,38 @@
 
 	</dependencies>
 	<build>
-	<plugins>
+
+		<plugins>
 			<plugin>
-				<!--  <groupId>org.codehaus.mojo</groupId> -->
-				<groupId>org.jvnet.jax-ws-commons</groupId>
+				<groupId>org.codehaus.mojo</groupId>
+				<!-- <groupId>org.jvnet.jax-ws-commons</groupId> -->
 				<artifactId>jaxws-maven-plugin</artifactId>
-				<version>2.3</version>
+				<version>1.2</version>
 				<executions>
 					<execution>
+						<id>wsimport-from-jdk</id>
 						<goals>
 							<goal>wsimport</goal>
 						</goals>
 					</execution>
 				</executions>
 				<configuration>
-					<wsdlUrl>http://developer.ebay.com/webservices/finding/latest/FindingService.wsdl</wsdlUrl>
-					<!-- <wsdlDirectory>src/main/resources</wsdlDirectory> -->
-					<!-- <sourceDestDir>src/main/java</sourceDestDir> -->
+					<!-- <wsdlUrl>http://developer.ebay.com/webservices/finding/latest/FindingService.wsdl</wsdlUrl> -->
+					<wsdlDirectory>src/main/resources/</wsdlDirectory>
+					<wsdlFiles>
+						<wsdlFile>FindingService.wsdl</wsdlFile>
+					</wsdlFiles>
+					<keep>true</keep>
+					<packageName>com.ebay.marketplace.search.v1.services</packageName>
+					<sourceDestDir>src/main/java</sourceDestDir>
 				</configuration>
 			</plugin>
-			</plugins>	
-			</build>
+			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>build-helper-maven-plugin</artifactId> 
+				<executions> <execution> <id>add-source</id> <phase>generate-sources</phase> 
+				<goals> <goal>add-source</goal> </goals> <configuration> <sources> <source>target/generated-code/src</source> 
+				</sources> </configuration> </execution> </executions> </plugin> -->
+		</plugins>
+
+	</build>
 </project>
 
