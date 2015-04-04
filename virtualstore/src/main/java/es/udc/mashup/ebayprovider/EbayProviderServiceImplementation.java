@@ -23,6 +23,8 @@ import com.ebay.marketplace.search.v1.services.SearchItem;
 import com.ebay.marketplace.search.v1.services.SearchResult;
 import com.ebay.marketplace.search.v1.services.SortOrderType;
 
+
+
 import es.udc.mashup.virtualstore.service.ProductTO;
 import es.udc.ws.util.exceptions.ServiceException;
 
