@@ -6,9 +6,12 @@ import java.util.List;
 
 import es.udc.mashup.ebayprovider.EbayProviderService;
 import es.udc.mashup.ebayprovider.EbayProviderServiceImplementation;
+import es.udc.mashup.internalprovider.InternalProviderService;
+import es.udc.mashup.internalprovider.InternalProviderServiceImplementation;
 import es.udc.mashup.virtualstore.service.ProductReviewTO;
 import es.udc.mashup.virtualstore.service.ProductTO;
 import es.udc.mashup.virtualstore.service.VirtualProductProviderService;
+import es.udc.mashup.virtualstore.service.VirtualProductProviderServiceFactory;
 import es.udc.ws.util.exceptions.ServiceException;
 
 @SuppressWarnings("unused")
@@ -16,6 +19,14 @@ public class MockVirtualProductProviderService implements
 		VirtualProductProviderService {
 	
 	private static final long serialVersionUID = 1L;
+	
+	private InternalProviderService internalProviderService;
+	private EbayProviderService ebayProviderService;
+	
+	public MockVirtualProductProviderService() {
+		this.internalProviderService = new InternalProviderServiceImplementation();
+		this.ebayProviderService = new EbayProviderServiceImplementation();
+	}
 
 	@Override
 	public List<ProductTO> findProducts(String productName, String category,
@@ -132,9 +143,7 @@ public class MockVirtualProductProviderService implements
 	@Override
 	public List<ProductTO> findProductsInternalSupplier(String productName,
 			String category, double minPrice, double maxPrice) {
-		// TODO Auto-generated method stub
-		List<ProductTO> products = new ArrayList<ProductTO>();
-		return products;
+		return this.internalProviderService.findProducts(productName, category, minPrice, maxPrice);
 		
 	}
 
@@ -143,12 +152,11 @@ public class MockVirtualProductProviderService implements
 			String category, double minPrice, double maxPrice)
 			throws ServiceException {
 
-		String category2 = "58058"; //Ahora estan Laptos (hayq ue mapear)
-		Date modTimeFrom = null;    //Ahora está a nulo para que vengan todos
-		int size = 20;              //Falta ver como se obtine
+		String category2 = "175672"; //Ahora estan Laptops (hay que mapear)
+		Date modTimeFrom = null;     //Ahora está a nulo para que vengan todos
+		int size = 20;               //Falta ver como se obtine
 		
-		EbayProviderService ebayProviderService = new EbayProviderServiceImplementation(); //FIXME Fata poner singelton e inyeccion de dependencias FIXME
-		return ebayProviderService.findProducts(productName, category2, minPrice, maxPrice, size, modTimeFrom);
+		return this.ebayProviderService.findProducts(productName, category2, minPrice, maxPrice, size, modTimeFrom);
 		
 	}
 }

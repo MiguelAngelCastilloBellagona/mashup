@@ -5,3 +5,41 @@ Necesitaremos el AppID para cada peticion Soap
 EVID: 3a162da6-d529-4ee8-9f1a-c2a1956aebd1
 AppID: esudc4081-73b1-4e54-b06f-8a1f9221949
 CertID: bbdd81e7-66e2-4b34-bd95-7e1db5f8dad0
+
+Facebook
+practicaadoo	adoo
+PracticaadooAdoo
+practicaADOO-FIC-UDC@yopmail.com
+qwertyuiop123
+06/JULIO/1989
+Hombre
+
+http://developers.facebook.com/apps
+
+Displayname = ws-events
+APP_ID = 446801798815947
+APP_SECRET = 83e91c323dac85133670551eb5ac637a
+
+http://www.facebook.com/pages/create.php
+Articulos de consumo y venta al por menor
+nombre = Practicaadoo
+https://www.facebook.com/pages/Practicaadoo/780165292079936?ref=hl
+
+https://graph.facebook.com/oauth/authorize?type=user_agent&client_id=446801798815947&redirect_uri=http://www.facebook.com/connect/login_success.html
+
+https://graph.facebook.com/endpoint?key=value&access_token=446801798815947|83e91c323dac85133670551eb5ac637a
+
+
+APP_TOKEN 446801798815947|MHHqYMJWnBux2KL2Clxf0o5NtkE
+
+Los sistemas del pdf no valen , Usa este
+
+
+http://www.facebook.com/connect/login_success.html#access_token=[CAACEdEose0cBAH6C4I3UxYB0E4VYZBOZBXdxAiKj8eC4uZBRtr1XYhU1TZAbOqpmflAO15RlAswUQrZBpXJjVzsneZAlBXmJ3DxnKofsD4Jaybpn4S3AWGS2uOreTW2PTrojkPWrYJdDTr7tPthrMOBDfwE6k4HAClZClEjgonrRq8udskDtGBWn9H0NX5mtXEzjWK40U7HnJPdpDbEmY0U]&expires_in=[...]&code=[...]
+
+Access Token = CAAGWXSaA4MsBABqDbgfkbD5a9rTf6U7PkXPuuVdgRGN2cXFTbi3easJGiGZCQHe8q92TnImENze0bDijddmwWw594mhaUJF9uT4irPQ3mZCjaAGUenma6oiAerrfvOXA677pTZBXgUZAFJaihjEEwZBTyRf1rjGWNj1T6ZAhP9HZCrbrGQk4Wj7rChtfeopoPN2LF37E4ctZAaH2B5hbz0wf
+https://graph.facebook.com/oauth/access_token?client_id=446801798815947&client_secret=83e91c323dac85133670551eb5ac637a&grant_type=fb_exchange_token&fb_exchange_token=CAAGWXSaA4MsBABqDbgfkbD5a9rTf6U7PkXPuuVdgRGN2cXFTbi3easJGiGZCQHe8q92TnImENze0bDijddmwWw594mhaUJF9uT4irPQ3mZCjaAGUenma6oiAerrfvOXA677pTZBXgUZAFJaihjEEwZBTyRf1rjGWNj1T6ZAhP9HZCrbrGQk4Wj7rChtfeopoPN2LF37E4ctZAaH2B5hbz0wf
+
+Acces TOKKEN 2 MONTH = CAAGWXSaA4MsBAHCUV829NFDV4aDJPFscXqR6noamRIIKDFRFIuJCOWAYntQSPXsUOphBXqIw8n0H41GB9tXDKMlgF9DmXQsHXU6m3zQUcEO81NYx99PuhHWpkd9c6RQrJQEwaqkB6bYPBaacLt9cARHS4MWeuayG6JZC3vpwZC1i5nb2HQ6dEgvMLZByoZCmmxfKg3mWBZBT1ph7mWqzG
+
+https://graph.facebook.com/446801798815947?access_token=CAAGWXSaA4MsBAHCUV829NFDV4aDJPFscXqR6noamRIIKDFRFIuJCOWAYntQSPXsUOphBXqIw8n0H41GB9tXDKMlgF9DmXQsHXU6m3zQUcEO81NYx99PuhHWpkd9c6RQrJQEwaqkB6bYPBaacLt9cARHS4MWeuayG6JZC3vpwZC1i5nb2HQ6dEgvMLZByoZCmmxfKg3mWBZBT1ph7mWqzG
