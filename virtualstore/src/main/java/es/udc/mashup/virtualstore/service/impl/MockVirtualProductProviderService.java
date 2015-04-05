@@ -37,6 +37,34 @@ public class MockVirtualProductProviderService implements
 		List<ProductTO> products = new ArrayList<ProductTO>();
 		products.addAll(productsEbay);
 		products.addAll(productsInternal);
+		
+		ProductReviewTO review00 = new ProductReviewTO();
+		review00.setScore(0);
+		review00.setReviewer("Expert User - 3987");
+		review00.setDescription("Graphics performance is slightly worse than last year's 13-inch model; 13-inch screen resolution still low compared with the previous model; limited upgrade options; expensive; no HDMI or Blu-ray.");
+
+		ProductReviewTO review01 = new ProductReviewTO();
+		review01.setScore(1);
+		review01.setReviewer("Guest User - 9875");
+		review01.setDescription("CPU updates offer big leaps in performance; phenomenal battery life; excellent ergonomics, keyboard, and large, smooth, multitouch clickpad are still among the best available; 720p HD Webcam.");
+
+		ProductReviewTO review02 = new ProductReviewTO();
+		review02.setScore(1);
+		review02.setReviewer("Reviewer User - 8753");
+		review02.setDescription("Slim, upscale design; excellent keyboard and touch pad; includes wireless display and built-in 4G wireless; solid value.");
+
+		ProductTO product01 = new ProductTO();
+		product01.setName("XZ-2098 Portable Slim");
+		product01.setCategory("Laptops");
+		product01
+				.setDescription("Despite retaining the same price and look as last year's model, XZ2098 Pro has significant CPU updates and fantastic battery life make it one of the top laptops we've reviewed, provided you can live with passable integrated graphics.");
+		product01.setPrice(900);
+		product01.addReview(review00);
+		product01.addReview(review01);
+		product01.addReview(review02);
+		
+		products.add(product01);
+		
 		return products;
 
 		/*
