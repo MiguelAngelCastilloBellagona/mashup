@@ -1,5 +1,7 @@
 package es.udc.mashup.ebayprovider;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,6 +9,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 import javax.xml.ws.BindingProvider;
 import javax.xml.ws.handler.MessageContext;
@@ -23,8 +26,6 @@ import com.ebay.marketplace.search.v1.services.SearchItem;
 import com.ebay.marketplace.search.v1.services.SearchResult;
 import com.ebay.marketplace.search.v1.services.SortOrderType;
 
-
-
 import es.udc.mashup.virtualstore.service.ProductTO;
 import es.udc.ws.util.exceptions.ServiceException;
 
@@ -35,12 +36,26 @@ public class EbayProviderServiceImplementation implements EbayProviderService {
 	private static final String APPID = "esudc4081-73b1-4e54-b06f-8a1f9221949";
 	private static final String SERVICE_END_POINT = "http://svcs.ebay.com/services/search/FindingService/v1";
 	
+	private static Properties properties;
+	
+	static {
+		try {
+			properties = new Properties();
+			InputStream inputStream = EbayProviderService.class.getClassLoader().getResourceAsStream("CategoryMapper.properties");
+			properties.load(inputStream);
+		} catch (IOException e) {
+			throw new RuntimeException("Could not read config file: " + e.getMessage());
+		}
+	}
+	
 	@Override
 	public List<ProductTO> findProducts(String keywords, String category,
 			double minPrice, double maxPrice, int size, Date modTimeFrom) throws ServiceException {
 
 		int pagenumber = 1;
 		int pageentries = size;
+		
+		category = categoryMapper(category);
 		
 		List<ProductTO> products = new ArrayList<ProductTO>();
 		
@@ -141,6 +156,16 @@ public class EbayProviderServiceImplementation implements EbayProviderService {
 			
 		}	
 		return products;
+	}
+	
+	private String categoryMapper(String category) {
+		try {
+			return properties.getProperty(category);
+		}
+		catch(NullPointerException e)
+		{
+			return null;
+		}
 	}
 
 }

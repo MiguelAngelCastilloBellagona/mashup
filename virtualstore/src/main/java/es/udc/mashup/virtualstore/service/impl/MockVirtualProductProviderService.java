@@ -38,6 +38,7 @@ public class MockVirtualProductProviderService implements
 		products.addAll(productsEbay);
 		products.addAll(productsInternal);
 		
+		/*
 		ProductReviewTO review00 = new ProductReviewTO();
 		review00.setScore(0);
 		review00.setReviewer("Expert User - 3987");
@@ -64,7 +65,7 @@ public class MockVirtualProductProviderService implements
 		product01.addReview(review02);
 		
 		products.add(product01);
-		
+		*/
 		return products;
 
 		/*
@@ -180,7 +181,8 @@ public class MockVirtualProductProviderService implements
 			String category, double minPrice, double maxPrice)
 			throws ServiceException {
 
-		String category2 = "175672"; //Ahora estan Laptops (hay que mapear)
+		String category2 = category;
+		//String category2 = "175672"; //Ahora estan Laptops (hay que mapear)
 		Date modTimeFrom = null;     //Ahora está a nulo para que vengan todos
 		int size = 20;               //Falta ver como se obtine
 		
