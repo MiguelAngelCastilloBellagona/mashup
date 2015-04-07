@@ -11,6 +11,8 @@ public interface ReviewProvider extends Serializable{
 	
 	public List<ProductTO> searchReviews(List<ProductTO> products) throws ServiceException;
 	
-	void addReview(ProductTO product, ProductReviewTO productReviewTO);
+	public ProductReviewTO searchReview(ProductTO product) throws ServiceException;
+	
+	void addReview(ProductTO product, ProductReviewTO productReviewTO) throws ServiceException;
 
 }

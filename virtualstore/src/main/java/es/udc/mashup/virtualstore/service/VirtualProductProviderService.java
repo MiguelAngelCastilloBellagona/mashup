@@ -10,12 +10,5 @@ public interface VirtualProductProviderService extends Serializable {
 	public List<ProductTO> findProducts(String productName, String category,
 			double minPrice, double maxPrice) throws ServiceException;
 
-	public List<ProductTO> findProductsInternalSupplier(String productName,
-			String category, double minPrice, double maxPrice)
-			throws ServiceException;
-	
-	public List<ProductTO> findProductsEbaySupplier(String productName,
-			String category, double minPrice, double maxPrice)
-			throws ServiceException;
 
 }
