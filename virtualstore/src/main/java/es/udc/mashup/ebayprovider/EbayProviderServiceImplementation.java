@@ -149,7 +149,8 @@ public class EbayProviderServiceImplementation implements EbayProviderService {
 			product.setName(aItem.getTitle());
 			product.setPrice(aItem.getSellingStatus().getConvertedCurrentPrice().getValue());
 			product.setDate(aItem.getListingInfo().getEndTime().toGregorianCalendar().getTime());
-			product.setDescription(null); //FIXME
+			product.setDescription(aItem.getSubtitle()); //FIXME 
+			
 			product.setImageURL(aItem.getGalleryURL());
 			
 			products.add(product);

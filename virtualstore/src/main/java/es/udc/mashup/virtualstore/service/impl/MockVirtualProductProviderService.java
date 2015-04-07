@@ -184,7 +184,7 @@ public class MockVirtualProductProviderService implements
 		String category2 = category;
 		//String category2 = "175672"; //Ahora estan Laptops (hay que mapear)
 		Date modTimeFrom = null;     //Ahora está a nulo para que vengan todos
-		int size = 20;               //Falta ver como se obtine
+		int size = 100;               //Falta ver como se obtine
 		
 		return this.ebayProviderService.findProducts(productName, category2, minPrice, maxPrice, size, modTimeFrom);
 		
