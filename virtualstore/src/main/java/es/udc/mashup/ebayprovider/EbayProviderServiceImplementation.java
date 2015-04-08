@@ -160,6 +160,7 @@ public class EbayProviderServiceImplementation implements EbayProviderService {
 		List<String> catID = req.getCategoryId();
 		catID.add(category);
 
+		try {
 		FindItemsAdvancedResponse res = port.findItemsAdvanced(req);
 		SearchResult searchResult = res.getSearchResult();
 		List<SearchItem> items = searchResult.getItem();
@@ -183,6 +184,11 @@ public class EbayProviderServiceImplementation implements EbayProviderService {
 
 		}
 		return products;
+		}
+		catch ( NullPointerException n) 
+		{
+			return new ArrayList<ProductTO>();
+		}
 	}
 
 	private String categoryMapper(String category) {
