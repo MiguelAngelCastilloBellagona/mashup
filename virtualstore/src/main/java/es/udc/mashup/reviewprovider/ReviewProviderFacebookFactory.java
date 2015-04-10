@@ -4,7 +4,7 @@ import es.udc.ws.util.configuration.ConfigurationParametersManager;
 import es.udc.ws.util.exceptions.ServiceException;
 
 @SuppressWarnings("rawtypes")
-public class ReviewProviderFacebookImplementationFactory {
+public class ReviewProviderFacebookFactory {
 
 	private final static String CLASS_NAME_PARAMETER = "ReviewProvicerService/className";
 
@@ -20,7 +20,7 @@ public class ReviewProviderFacebookImplementationFactory {
 		}
 	}
 
-	private ReviewProviderFacebookImplementationFactory() {
+	private ReviewProviderFacebookFactory() {
 	}
 
 	public static ReviewProvider getReviewProviderService()

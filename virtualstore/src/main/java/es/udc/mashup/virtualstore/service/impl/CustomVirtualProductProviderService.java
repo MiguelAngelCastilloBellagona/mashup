@@ -2,64 +2,53 @@ package es.udc.mashup.virtualstore.service.impl;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Hashtable;
 import java.util.List;
 
-import es.udc.mashup.ebayprovider.EbayPrividerServiceFactory;
-import es.udc.mashup.ebayprovider.EbayProviderService;
-import es.udc.mashup.ebayprovider.EbayProviderServiceImplementation;
-import es.udc.mashup.internalprovider.InternalProviderService;
-import es.udc.mashup.internalprovider.InternalProviderServiceFactory;
-import es.udc.mashup.internalprovider.InternalProviderServiceImplementation;
-import es.udc.mashup.reviewprovider.ReviewProviderFacebookImplementation;
-import es.udc.mashup.reviewprovider.ReviewProviderFacebookImplementationFactory;
-import es.udc.mashup.virtualstore.service.ProductReviewTO;
+import es.udc.mashup.productprovider.ProductProviderServiceFactory;
+import es.udc.mashup.reviewprovider.Review;
+import es.udc.mashup.reviewprovider.ReviewProviderFacebookFactory;
 import es.udc.mashup.virtualstore.service.ProductTO;
 import es.udc.mashup.virtualstore.service.VirtualProductProviderService;
-import es.udc.mashup.virtualstore.service.VirtualProductProviderServiceFactory;
 import es.udc.ws.util.exceptions.ServiceException;
 
-@SuppressWarnings("unused")
 public class CustomVirtualProductProviderService implements VirtualProductProviderService {
-	
+
 	private static final long serialVersionUID = 1L;
 
 	@Override
-	public List<ProductTO> findProducts(String productName, String category,
-			double minPrice, double maxPrice) throws ServiceException {
-		
-		List<ProductTO> productsInternal = findProductsInternalSupplier(productName,category,minPrice,maxPrice);
-		List<ProductTO> productsEbay     = findProductsEbaySupplier(productName,category,minPrice,maxPrice);
-		List<ProductTO> products = new ArrayList<ProductTO>();
-		products.addAll(productsInternal);
-		products.addAll(productsEbay);
-		
-		ReviewProviderFacebookImplementationFactory.getReviewProviderService().searchReviews(products);
-		
-		return products;
-	}
-
-	public List<ProductTO> findProductsInternalSupplier(String productName,
-			String category, double minPrice, double maxPrice) {
-	
-		return this.getRealInternalProviderService().findProducts(productName, category, minPrice, maxPrice);
-		
-	}
-
-	public List<ProductTO> findProductsEbaySupplier(String productName,
-			String category, double minPrice, double maxPrice)
+	public List<ProductTO> findProducts(String productName, String category, double minPrice, double maxPrice)
 			throws ServiceException {
 
-		Date modTimeFrom = null;     //Ahora está a nulo para que vengan todos
-		int size = 100;              //Falta ver como se obtine
-		
-		return this.getRealEbayProviderService().findProducts(productName, category, minPrice, maxPrice, size, modTimeFrom);
-	}
-	
-	private EbayProviderService getRealEbayProviderService() {
-		return EbayPrividerServiceFactory.getEbayProviderService();
+		Date modTimeFrom = null;
+		int size = 100;
+
+		List<ProductTO> productos = TypeConversor.toProductsTO(ProductProviderServiceFactory
+				.getInternalProviderService()
+				.findProducts(productName, category, minPrice, maxPrice, size, modTimeFrom));
+
+		List<String> names = new ArrayList<String>();
+
+		for (ProductTO p : productos)
+			names.add(p.getName());
+
+		Hashtable<String, List<Review>> reviews = ReviewProviderFacebookFactory.getReviewProviderService()
+				.searchReviews(names);
+
+		for (ProductTO p : productos) {
+			p.setReviews(TypeConversor.toProductReviewTOs(reviews.get(p.getName())));
+		}
+
+		return productos;
 	}
 
-	private InternalProviderService getRealInternalProviderService() {
-		return InternalProviderServiceFactory.getInternalProviderService();
+	@Override
+	public List<ProductTO> findProductsBeforeDate(String productName, String category, double minPrice,
+			double maxPrice, Date modTimeFrom) throws ServiceException {
+
+		int size = 100;
+
+		return TypeConversor.toProductsTO(ProductProviderServiceFactory.getInternalProviderService().findProducts(
+				productName, category, minPrice, maxPrice, size, modTimeFrom));
 	}
 }
