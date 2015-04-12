@@ -16,7 +16,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "FindingService", targetNamespace = "http://www.ebay.com/marketplace/search/v1/services", wsdlLocation = "file:/D:/Surah/workspaces/Eclipse/workspaceADOO/Practica%20ADOO/virtualstore/src/main/resources/FindingService.wsdl")
+@WebServiceClient(name = "FindingService", targetNamespace = "http://www.ebay.com/marketplace/search/v1/services", wsdlLocation = "file:/D:/Surah/workspaces/Eclipse/workspace-Practica-ADOO/mashup/virtualstore/src/main/resources/FindingService.wsdl")
 public class FindingService
     extends Service
 {
@@ -26,7 +26,7 @@ public class FindingService
     static {
         URL url = null;
         try {
-            url = new URL("file:/D:/Surah/workspaces/Eclipse/workspaceADOO/Practica%20ADOO/virtualstore/src/main/resources/FindingService.wsdl");
+            url = new URL("file:/D:/Surah/workspaces/Eclipse/workspace-Practica-ADOO/mashup/virtualstore/src/main/resources/FindingService.wsdl");
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
