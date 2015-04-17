@@ -38,6 +38,7 @@ public class LastProductsImpl implements LastProductsService {
 		doc.getRootElement().addContent(subtitle);
 		Element updated = new Element("updated").setText(Calendar.getInstance().getTime().toString());
 		doc.getRootElement().addContent(updated);
+		@SuppressWarnings("unused")
 		Element id = new Element("id").setText("PracticaADOO");
 		//doc.getRootElement().addContent(id);
 
