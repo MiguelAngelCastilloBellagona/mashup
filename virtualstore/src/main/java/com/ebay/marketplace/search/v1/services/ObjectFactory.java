@@ -55,147 +55,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Storefront }
+     * Create an instance of {@link Distance }
      * 
      */
-    public Storefront createStorefront() {
-        return new Storefront();
+    public Distance createDistance() {
+        return new Distance();
     }
 
     /**
-     * Create an instance of {@link Affiliate }
+     * Create an instance of {@link FindItemsByCategoryRequest }
      * 
      */
-    public Affiliate createAffiliate() {
-        return new Affiliate();
-    }
-
-    /**
-     * Create an instance of {@link FindItemsForFavoriteSearchResponse }
-     * 
-     */
-    public FindItemsForFavoriteSearchResponse createFindItemsForFavoriteSearchResponse() {
-        return new FindItemsForFavoriteSearchResponse();
-    }
-
-    /**
-     * Create an instance of {@link FindItemsForFavoriteSearchRequest }
-     * 
-     */
-    public FindItemsForFavoriteSearchRequest createFindItemsForFavoriteSearchRequest() {
-        return new FindItemsForFavoriteSearchRequest();
-    }
-
-    /**
-     * Create an instance of {@link FindCompletedItemsResponse }
-     * 
-     */
-    public FindCompletedItemsResponse createFindCompletedItemsResponse() {
-        return new FindCompletedItemsResponse();
-    }
-
-    /**
-     * Create an instance of {@link FindItemsIneBayStoresResponse }
-     * 
-     */
-    public FindItemsIneBayStoresResponse createFindItemsIneBayStoresResponse() {
-        return new FindItemsIneBayStoresResponse();
-    }
-
-    /**
-     * Create an instance of {@link FindItemsByImageRequest }
-     * 
-     */
-    public FindItemsByImageRequest createFindItemsByImageRequest() {
-        return new FindItemsByImageRequest();
-    }
-
-    /**
-     * Create an instance of {@link AspectValueHistogram }
-     * 
-     */
-    public AspectValueHistogram createAspectValueHistogram() {
-        return new AspectValueHistogram();
-    }
-
-    /**
-     * Create an instance of {@link AspectFilter }
-     * 
-     */
-    public AspectFilter createAspectFilter() {
-        return new AspectFilter();
-    }
-
-    /**
-     * Create an instance of {@link DiscountPriceInfo }
-     * 
-     */
-    public DiscountPriceInfo createDiscountPriceInfo() {
-        return new DiscountPriceInfo();
-    }
-
-    /**
-     * Create an instance of {@link GetSearchKeywordsRecommendationResponse }
-     * 
-     */
-    public GetSearchKeywordsRecommendationResponse createGetSearchKeywordsRecommendationResponse() {
-        return new GetSearchKeywordsRecommendationResponse();
-    }
-
-    /**
-     * Create an instance of {@link Category }
-     * 
-     */
-    public Category createCategory() {
-        return new Category();
-    }
-
-    /**
-     * Create an instance of {@link SearchItem }
-     * 
-     */
-    public SearchItem createSearchItem() {
-        return new SearchItem();
-    }
-
-    /**
-     * Create an instance of {@link FindItemsByKeywordsResponse }
-     * 
-     */
-    public FindItemsByKeywordsResponse createFindItemsByKeywordsResponse() {
-        return new FindItemsByKeywordsResponse();
-    }
-
-    /**
-     * Create an instance of {@link FindItemsIneBayStoresRequest }
-     * 
-     */
-    public FindItemsIneBayStoresRequest createFindItemsIneBayStoresRequest() {
-        return new FindItemsIneBayStoresRequest();
-    }
-
-    /**
-     * Create an instance of {@link SellerInfo }
-     * 
-     */
-    public SellerInfo createSellerInfo() {
-        return new SellerInfo();
-    }
-
-    /**
-     * Create an instance of {@link ShippingInfo }
-     * 
-     */
-    public ShippingInfo createShippingInfo() {
-        return new ShippingInfo();
-    }
-
-    /**
-     * Create an instance of {@link PaginationInput }
-     * 
-     */
-    public PaginationInput createPaginationInput() {
-        return new PaginationInput();
+    public FindItemsByCategoryRequest createFindItemsByCategoryRequest() {
+        return new FindItemsByCategoryRequest();
     }
 
     /**
@@ -207,51 +79,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FindItemsByProductResponse }
+     * Create an instance of {@link FindItemsForFavoriteSearchRequest }
      * 
      */
-    public FindItemsByProductResponse createFindItemsByProductResponse() {
-        return new FindItemsByProductResponse();
+    public FindItemsForFavoriteSearchRequest createFindItemsForFavoriteSearchRequest() {
+        return new FindItemsForFavoriteSearchRequest();
     }
 
     /**
-     * Create an instance of {@link FindItemsAdvancedResponse }
+     * Create an instance of {@link ItemAttribute }
      * 
      */
-    public FindItemsAdvancedResponse createFindItemsAdvancedResponse() {
-        return new FindItemsAdvancedResponse();
-    }
-
-    /**
-     * Create an instance of {@link DomainFilter }
-     * 
-     */
-    public DomainFilter createDomainFilter() {
-        return new DomainFilter();
-    }
-
-    /**
-     * Create an instance of {@link FindItemsByImageResponse }
-     * 
-     */
-    public FindItemsByImageResponse createFindItemsByImageResponse() {
-        return new FindItemsByImageResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetHistogramsResponse }
-     * 
-     */
-    public GetHistogramsResponse createGetHistogramsResponse() {
-        return new GetHistogramsResponse();
-    }
-
-    /**
-     * Create an instance of {@link FindItemsByCategoryResponse }
-     * 
-     */
-    public FindItemsByCategoryResponse createFindItemsByCategoryResponse() {
-        return new FindItemsByCategoryResponse();
+    public ItemAttribute createItemAttribute() {
+        return new ItemAttribute();
     }
 
     /**
@@ -260,6 +100,62 @@ public class ObjectFactory {
      */
     public GetHistogramsRequest createGetHistogramsRequest() {
         return new GetHistogramsRequest();
+    }
+
+    /**
+     * Create an instance of {@link FindItemsByProductResponse }
+     * 
+     */
+    public FindItemsByProductResponse createFindItemsByProductResponse() {
+        return new FindItemsByProductResponse();
+    }
+
+    /**
+     * Create an instance of {@link ShippingInfo }
+     * 
+     */
+    public ShippingInfo createShippingInfo() {
+        return new ShippingInfo();
+    }
+
+    /**
+     * Create an instance of {@link ListingInfo }
+     * 
+     */
+    public ListingInfo createListingInfo() {
+        return new ListingInfo();
+    }
+
+    /**
+     * Create an instance of {@link AspectValueHistogram }
+     * 
+     */
+    public AspectValueHistogram createAspectValueHistogram() {
+        return new AspectValueHistogram();
+    }
+
+    /**
+     * Create an instance of {@link ExtensionType }
+     * 
+     */
+    public ExtensionType createExtensionType() {
+        return new ExtensionType();
+    }
+
+    /**
+     * Create an instance of {@link ConditionHistogramContainer }
+     * 
+     */
+    public ConditionHistogramContainer createConditionHistogramContainer() {
+        return new ConditionHistogramContainer();
+    }
+
+    /**
+     * Create an instance of {@link Condition }
+     * 
+     */
+    public Condition createCondition() {
+        return new Condition();
     }
 
     /**
@@ -279,99 +175,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Distance }
+     * Create an instance of {@link GetSearchKeywordsRecommendationResponse }
      * 
      */
-    public Distance createDistance() {
-        return new Distance();
+    public GetSearchKeywordsRecommendationResponse createGetSearchKeywordsRecommendationResponse() {
+        return new GetSearchKeywordsRecommendationResponse();
     }
 
     /**
-     * Create an instance of {@link ItemFilter }
+     * Create an instance of {@link GetHistogramsResponse }
      * 
      */
-    public ItemFilter createItemFilter() {
-        return new ItemFilter();
+    public GetHistogramsResponse createGetHistogramsResponse() {
+        return new GetHistogramsResponse();
     }
 
     /**
-     * Create an instance of {@link ConditionHistogram }
+     * Create an instance of {@link Amount }
      * 
      */
-    public ConditionHistogram createConditionHistogram() {
-        return new ConditionHistogram();
-    }
-
-    /**
-     * Create an instance of {@link FindItemsByCategoryRequest }
-     * 
-     */
-    public FindItemsByCategoryRequest createFindItemsByCategoryRequest() {
-        return new FindItemsByCategoryRequest();
-    }
-
-    /**
-     * Create an instance of {@link AspectHistogramContainer }
-     * 
-     */
-    public AspectHistogramContainer createAspectHistogramContainer() {
-        return new AspectHistogramContainer();
-    }
-
-    /**
-     * Create an instance of {@link ErrorParameter }
-     * 
-     */
-    public ErrorParameter createErrorParameter() {
-        return new ErrorParameter();
-    }
-
-    /**
-     * Create an instance of {@link FindItemsAdvancedRequest }
-     * 
-     */
-    public FindItemsAdvancedRequest createFindItemsAdvancedRequest() {
-        return new FindItemsAdvancedRequest();
-    }
-
-    /**
-     * Create an instance of {@link ListingInfo }
-     * 
-     */
-    public ListingInfo createListingInfo() {
-        return new ListingInfo();
-    }
-
-    /**
-     * Create an instance of {@link ProductId }
-     * 
-     */
-    public ProductId createProductId() {
-        return new ProductId();
-    }
-
-    /**
-     * Create an instance of {@link GetVersionResponse }
-     * 
-     */
-    public GetVersionResponse createGetVersionResponse() {
-        return new GetVersionResponse();
-    }
-
-    /**
-     * Create an instance of {@link FindItemsByKeywordsRequest }
-     * 
-     */
-    public FindItemsByKeywordsRequest createFindItemsByKeywordsRequest() {
-        return new FindItemsByKeywordsRequest();
-    }
-
-    /**
-     * Create an instance of {@link GalleryURL }
-     * 
-     */
-    public GalleryURL createGalleryURL() {
-        return new GalleryURL();
+    public Amount createAmount() {
+        return new Amount();
     }
 
     /**
@@ -383,35 +207,163 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ItemAttribute }
+     * Create an instance of {@link FindItemsByImageRequest }
      * 
      */
-    public ItemAttribute createItemAttribute() {
-        return new ItemAttribute();
+    public FindItemsByImageRequest createFindItemsByImageRequest() {
+        return new FindItemsByImageRequest();
     }
 
     /**
-     * Create an instance of {@link GetVersionRequest }
+     * Create an instance of {@link ConditionHistogram }
      * 
      */
-    public GetVersionRequest createGetVersionRequest() {
-        return new GetVersionRequest();
+    public ConditionHistogram createConditionHistogram() {
+        return new ConditionHistogram();
     }
 
     /**
-     * Create an instance of {@link GalleryInfoContainer }
+     * Create an instance of {@link GetVersionResponse }
      * 
      */
-    public GalleryInfoContainer createGalleryInfoContainer() {
-        return new GalleryInfoContainer();
+    public GetVersionResponse createGetVersionResponse() {
+        return new GetVersionResponse();
     }
 
     /**
-     * Create an instance of {@link UnitPriceInfo }
+     * Create an instance of {@link DiscountPriceInfo }
      * 
      */
-    public UnitPriceInfo createUnitPriceInfo() {
-        return new UnitPriceInfo();
+    public DiscountPriceInfo createDiscountPriceInfo() {
+        return new DiscountPriceInfo();
+    }
+
+    /**
+     * Create an instance of {@link SearchItem }
+     * 
+     */
+    public SearchItem createSearchItem() {
+        return new SearchItem();
+    }
+
+    /**
+     * Create an instance of {@link Affiliate }
+     * 
+     */
+    public Affiliate createAffiliate() {
+        return new Affiliate();
+    }
+
+    /**
+     * Create an instance of {@link Category }
+     * 
+     */
+    public Category createCategory() {
+        return new Category();
+    }
+
+    /**
+     * Create an instance of {@link FindItemsByImageResponse }
+     * 
+     */
+    public FindItemsByImageResponse createFindItemsByImageResponse() {
+        return new FindItemsByImageResponse();
+    }
+
+    /**
+     * Create an instance of {@link AspectFilter }
+     * 
+     */
+    public AspectFilter createAspectFilter() {
+        return new AspectFilter();
+    }
+
+    /**
+     * Create an instance of {@link CategoryHistogram }
+     * 
+     */
+    public CategoryHistogram createCategoryHistogram() {
+        return new CategoryHistogram();
+    }
+
+    /**
+     * Create an instance of {@link SellerInfo }
+     * 
+     */
+    public SellerInfo createSellerInfo() {
+        return new SellerInfo();
+    }
+
+    /**
+     * Create an instance of {@link FindItemsByKeywordsResponse }
+     * 
+     */
+    public FindItemsByKeywordsResponse createFindItemsByKeywordsResponse() {
+        return new FindItemsByKeywordsResponse();
+    }
+
+    /**
+     * Create an instance of {@link AspectHistogramContainer }
+     * 
+     */
+    public AspectHistogramContainer createAspectHistogramContainer() {
+        return new AspectHistogramContainer();
+    }
+
+    /**
+     * Create an instance of {@link ItemFilter }
+     * 
+     */
+    public ItemFilter createItemFilter() {
+        return new ItemFilter();
+    }
+
+    /**
+     * Create an instance of {@link SearchResult }
+     * 
+     */
+    public SearchResult createSearchResult() {
+        return new SearchResult();
+    }
+
+    /**
+     * Create an instance of {@link GalleryURL }
+     * 
+     */
+    public GalleryURL createGalleryURL() {
+        return new GalleryURL();
+    }
+
+    /**
+     * Create an instance of {@link DomainFilter }
+     * 
+     */
+    public DomainFilter createDomainFilter() {
+        return new DomainFilter();
+    }
+
+    /**
+     * Create an instance of {@link FindItemsIneBayStoresRequest }
+     * 
+     */
+    public FindItemsIneBayStoresRequest createFindItemsIneBayStoresRequest() {
+        return new FindItemsIneBayStoresRequest();
+    }
+
+    /**
+     * Create an instance of {@link Storefront }
+     * 
+     */
+    public Storefront createStorefront() {
+        return new Storefront();
+    }
+
+    /**
+     * Create an instance of {@link PaginationInput }
+     * 
+     */
+    public PaginationInput createPaginationInput() {
+        return new PaginationInput();
     }
 
     /**
@@ -420,6 +372,30 @@ public class ObjectFactory {
      */
     public SellingStatus createSellingStatus() {
         return new SellingStatus();
+    }
+
+    /**
+     * Create an instance of {@link FindItemsByKeywordsRequest }
+     * 
+     */
+    public FindItemsByKeywordsRequest createFindItemsByKeywordsRequest() {
+        return new FindItemsByKeywordsRequest();
+    }
+
+    /**
+     * Create an instance of {@link FindItemsAdvancedRequest }
+     * 
+     */
+    public FindItemsAdvancedRequest createFindItemsAdvancedRequest() {
+        return new FindItemsAdvancedRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetSearchKeywordsRecommendationRequest }
+     * 
+     */
+    public GetSearchKeywordsRecommendationRequest createGetSearchKeywordsRecommendationRequest() {
+        return new GetSearchKeywordsRecommendationRequest();
     }
 
     /**
@@ -439,59 +415,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ConditionHistogramContainer }
+     * Create an instance of {@link ProductId }
      * 
      */
-    public ConditionHistogramContainer createConditionHistogramContainer() {
-        return new ConditionHistogramContainer();
+    public ProductId createProductId() {
+        return new ProductId();
     }
 
     /**
-     * Create an instance of {@link GetSearchKeywordsRecommendationRequest }
+     * Create an instance of {@link FindItemsForFavoriteSearchResponse }
      * 
      */
-    public GetSearchKeywordsRecommendationRequest createGetSearchKeywordsRecommendationRequest() {
-        return new GetSearchKeywordsRecommendationRequest();
+    public FindItemsForFavoriteSearchResponse createFindItemsForFavoriteSearchResponse() {
+        return new FindItemsForFavoriteSearchResponse();
     }
 
     /**
-     * Create an instance of {@link Amount }
+     * Create an instance of {@link UnitPriceInfo }
      * 
      */
-    public Amount createAmount() {
-        return new Amount();
+    public UnitPriceInfo createUnitPriceInfo() {
+        return new UnitPriceInfo();
     }
 
     /**
-     * Create an instance of {@link CategoryHistogram }
+     * Create an instance of {@link GetVersionRequest }
      * 
      */
-    public CategoryHistogram createCategoryHistogram() {
-        return new CategoryHistogram();
-    }
-
-    /**
-     * Create an instance of {@link Condition }
-     * 
-     */
-    public Condition createCondition() {
-        return new Condition();
-    }
-
-    /**
-     * Create an instance of {@link ExtensionType }
-     * 
-     */
-    public ExtensionType createExtensionType() {
-        return new ExtensionType();
-    }
-
-    /**
-     * Create an instance of {@link SearchResult }
-     * 
-     */
-    public SearchResult createSearchResult() {
-        return new SearchResult();
+    public GetVersionRequest createGetVersionRequest() {
+        return new GetVersionRequest();
     }
 
     /**
@@ -500,6 +452,54 @@ public class ObjectFactory {
      */
     public ErrorMessage createErrorMessage() {
         return new ErrorMessage();
+    }
+
+    /**
+     * Create an instance of {@link FindItemsByCategoryResponse }
+     * 
+     */
+    public FindItemsByCategoryResponse createFindItemsByCategoryResponse() {
+        return new FindItemsByCategoryResponse();
+    }
+
+    /**
+     * Create an instance of {@link GalleryInfoContainer }
+     * 
+     */
+    public GalleryInfoContainer createGalleryInfoContainer() {
+        return new GalleryInfoContainer();
+    }
+
+    /**
+     * Create an instance of {@link FindItemsIneBayStoresResponse }
+     * 
+     */
+    public FindItemsIneBayStoresResponse createFindItemsIneBayStoresResponse() {
+        return new FindItemsIneBayStoresResponse();
+    }
+
+    /**
+     * Create an instance of {@link FindCompletedItemsResponse }
+     * 
+     */
+    public FindCompletedItemsResponse createFindCompletedItemsResponse() {
+        return new FindCompletedItemsResponse();
+    }
+
+    /**
+     * Create an instance of {@link FindItemsAdvancedResponse }
+     * 
+     */
+    public FindItemsAdvancedResponse createFindItemsAdvancedResponse() {
+        return new FindItemsAdvancedResponse();
+    }
+
+    /**
+     * Create an instance of {@link ErrorParameter }
+     * 
+     */
+    public ErrorParameter createErrorParameter() {
+        return new ErrorParameter();
     }
 
     /**

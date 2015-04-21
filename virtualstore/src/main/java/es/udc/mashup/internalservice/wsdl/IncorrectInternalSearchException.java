@@ -1,5 +1,5 @@
 
-package es.udc.ws.jaxwstutorial.wsdl;
+package es.udc.mashup.internalservice.wsdl;
 
 import javax.xml.ws.WebFault;
 

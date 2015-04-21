@@ -1,5 +1,5 @@
 
-package es.udc.ws.jaxwstutorial.wsdl;
+package es.udc.mashup.internalservice.wsdl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,12 +10,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getLastTradePricesResponse complex type.
+ * <p>Java class for searchProductsResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="getLastTradePricesResponse">
+ * &lt;complexType name="searchProductsResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -29,10 +29,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getLastTradePricesResponse", propOrder = {
+@XmlType(name = "searchProductsResponse", propOrder = {
     "_return"
 })
-public class GetLastTradePricesResponse {
+public class SearchProductsResponse {
 
     @XmlElement(name = "return")
     protected List<InternalProduct> _return;

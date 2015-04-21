@@ -59,7 +59,7 @@ public class EbayProviderServiceImplementation implements ProductProviderService
 		} catch (IOException e) {
 			throw new RuntimeException("Could not read config file: " + e.getMessage());
 		}
-	}
+	} 
 
 	@Override
 	public List<Product> findProducts(String keywords, String category, double minPrice, double maxPrice, int size,

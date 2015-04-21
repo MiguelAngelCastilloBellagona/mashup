@@ -1,5 +1,6 @@
 package es.udc.mashup.internalserver;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -9,32 +10,35 @@ import javax.jws.WebService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-@WebService(
-    name="InternalServerProvider",
-    serviceName="InternalServerService",
-    targetNamespace="http://ws.adoo.udc.es/"
-)
+@WebService(name = "InternalServerProvider", serviceName = "InternalServerService", targetNamespace = "http://ws.adoo.udc.es/")
 public class InternalServerImpl {
 
-    Log logger = LogFactory.getLog(InternalServerImpl.class);
+	Log logger = LogFactory.getLog(InternalServerImpl.class);
 
+	@PostConstruct()
+	private void init() {
 
-    @PostConstruct()
-    private void init() {
+	}
 
-    }
-    
-    public InternalServerImpl() {
-    }
+	public InternalServerImpl() {
+	}
 
-    @WebMethod(
-        operationName="getLastTradePrices"
-    )
-    public List<InternalProduct> getLastTradePrices(List<String> tickerSymbols) throws IncorrectInternalSearchException {
+	@WebMethod(operationName = "searchProducts")
+	public List<InternalProduct> searchProducts(String keyWords,
+			String category, double minPrice, double maxPrice)
+			throws IncorrectInternalSearchException {
 
-        
-        return null;
-        
-    }
+		return null;
+
+	}
+
+	@WebMethod(operationName = "searchProductsBetweenDates")
+	public List<InternalProduct> searchProductsBetweenDates(String keyWords,
+			String category, double minPrice, double maxPrice, Date minDate,
+			Date maxDate) throws IncorrectInternalSearchException {
+
+		return null;
+
+	}
 
 }

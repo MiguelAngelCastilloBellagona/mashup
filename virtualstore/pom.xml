@@ -56,6 +56,21 @@
 				<version>1.2</version>
 				<executions>
 					<execution>
+						<id>wsimport-InternlaService</id>
+						<goals>
+							<goal>wsimport</goal>
+						</goals>
+						<configuration> 
+							<wsdlDirectory>../mashup-internalserver/target/jaxws/wsgen/wsdl/</wsdlDirectory>
+							<wsdlFiles>
+								<wsdlFile>InternalServerService.wsdl</wsdlFile>
+							</wsdlFiles>
+							<sourceDestDir>src/main/java</sourceDestDir>
+							<packageName>es.udc.mashup.internalservice.wsdl</packageName>
+						</configuration>
+					</execution>
+					
+					<execution>
 						<id>wsimport-Ebay</id>
 						<goals>
 							<goal>wsimport</goal>
@@ -71,17 +86,8 @@
 						</configuration>
 					</execution>
 
-					<execution>
-						<id>wsimport-InternlaService</id>
-						<goals>
-							<goal>wsimport</goal>
-						</goals>
-						<configuration>
-							<wsdlDirectory>../mashup-internalserver/target/jaxws/wsgen/wsdl/</wsdlDirectory>
-							<sourceDestDir>src/main/java</sourceDestDir>
-							<packageName>es.udc.ws.jaxwstutorial.wsdl</packageName>
-						</configuration>
-					</execution>
+
+
 
 				</executions>
 
