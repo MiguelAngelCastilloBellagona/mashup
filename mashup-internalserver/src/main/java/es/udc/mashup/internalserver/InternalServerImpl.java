@@ -18,9 +18,9 @@ import org.apache.commons.logging.LogFactory;
     serviceName="StockQuoteProviderService",
     targetNamespace="http://ws.adoo.udc.es/"
 )
-public class StockQuoteProviderImpl {
+public class InternalServerImpl {
 
-    Log logger = LogFactory.getLog(StockQuoteProviderImpl.class);
+    Log logger = LogFactory.getLog(InternalServerImpl.class);
 
     private Map<String, TradePrice> tradePrices;
 
@@ -55,7 +55,7 @@ public class StockQuoteProviderImpl {
         
     }
     
-    public StockQuoteProviderImpl() {
+    public InternalServerImpl() {
     }
 
     @WebMethod(

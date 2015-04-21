@@ -28,7 +28,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>mashup-internalserver</finalName>
+		<finalName>ws-jaxwstutorial-service</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -69,13 +69,3 @@
 		</plugins>
 	</build>
 </project>
-
-<!--  
-	<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<webXml>src\main\WEB-INF\web.xml</webXml>
-				</configuration>
-			</plugin>
- -->
