@@ -9,7 +9,7 @@
         </listener-class>
     </listener>
 
-    <display-name>Mashup InternalServer</display-name>
+    <display-name>JAXWSTutorial Web Service</display-name>
 
     <servlet>
         <servlet-name>WSServlet</servlet-name>
