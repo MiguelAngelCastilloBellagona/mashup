@@ -30,10 +30,10 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "BaseServiceRequest")
 @XmlSeeAlso({
+    GetVersionRequest.class,
     GetHistogramsRequest.class,
     FindItemsForFavoriteSearchRequest.class,
     GetSearchKeywordsRecommendationRequest.class,
-    GetVersionRequest.class,
     BestMatchFindingServiceRequest.class
 })
 public abstract class BaseServiceRequest {

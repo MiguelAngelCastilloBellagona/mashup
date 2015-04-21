@@ -35,12 +35,12 @@ import javax.xml.bind.annotation.XmlType;
     "sortOrder"
 })
 @XmlSeeAlso({
-    FindItemsAdvancedRequest.class,
-    FindCompletedItemsRequest.class,
     FindItemsByKeywordsRequest.class,
-    FindItemsByProductRequest.class,
+    FindCompletedItemsRequest.class,
+    FindItemsAdvancedRequest.class,
     FindItemsIneBayStoresRequest.class,
-    FindItemsByCategoryRequest.class
+    FindItemsByCategoryRequest.class,
+    FindItemsByProductRequest.class
 })
 public abstract class BaseFindingServiceRequest
     extends BestMatchFindingServiceRequest

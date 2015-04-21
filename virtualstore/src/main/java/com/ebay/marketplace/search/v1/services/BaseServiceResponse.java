@@ -45,8 +45,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
 })
 @XmlSeeAlso({
     GetSearchKeywordsRecommendationResponse.class,
-    GetVersionResponse.class,
     GetHistogramsResponse.class,
+    GetVersionResponse.class,
     BaseFindingServiceResponse.class
 })
 public abstract class BaseServiceResponse {

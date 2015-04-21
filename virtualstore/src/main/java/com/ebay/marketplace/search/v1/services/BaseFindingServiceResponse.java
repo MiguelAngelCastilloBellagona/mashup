@@ -44,14 +44,14 @@ import javax.xml.bind.annotation.XmlType;
     "extension"
 })
 @XmlSeeAlso({
-    FindItemsByCategoryResponse.class,
-    FindItemsForFavoriteSearchResponse.class,
-    FindItemsByProductResponse.class,
-    FindItemsByImageResponse.class,
-    FindItemsIneBayStoresResponse.class,
     FindItemsByKeywordsResponse.class,
+    FindItemsForFavoriteSearchResponse.class,
+    FindItemsAdvancedResponse.class,
     FindCompletedItemsResponse.class,
-    FindItemsAdvancedResponse.class
+    FindItemsIneBayStoresResponse.class,
+    FindItemsByProductResponse.class,
+    FindItemsByCategoryResponse.class,
+    FindItemsByImageResponse.class
 })
 public abstract class BaseFindingServiceResponse
     extends BaseServiceResponse

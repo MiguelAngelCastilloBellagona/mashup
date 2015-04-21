@@ -2,6 +2,6 @@
 <endpoints xmlns='http://java.sun.com/xml/ns/jax-ws/ri/runtime' version='2.0'>
     <endpoint
             name='StockQuoteProvider'
-            implementation='es.udc.ws.jaxwstutorial.service.StockQuoteProviderImpl'
-            url-pattern='/services/StockQuotesService'/>
+            implementation=' es.udc.mashup.internalserver.InternalServerImpl'
+            url-pattern='/services/InternalServer'/>
 </endpoints>

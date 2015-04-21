@@ -28,7 +28,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>ws-jaxwstutorial-service</finalName>
+		<finalName>mashup-internalserver</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
