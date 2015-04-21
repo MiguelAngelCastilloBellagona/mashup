@@ -14,6 +14,8 @@ import org.apache.commons.logging.LogFactory;
 public class InternalServerImpl {
 
 	Log logger = LogFactory.getLog(InternalServerImpl.class);
+	
+	List<InternalProduct> lista;
 
 	@PostConstruct()
 	private void init() {
@@ -28,7 +30,7 @@ public class InternalServerImpl {
 			String category, double minPrice, double maxPrice)
 			throws IncorrectInternalSearchException {
 
-		return null;
+		return lista;
 
 	}
 
@@ -37,7 +39,7 @@ public class InternalServerImpl {
 			String category, double minPrice, double maxPrice, Date minDate,
 			Date maxDate) throws IncorrectInternalSearchException {
 
-		return null;
+		return lista;
 
 	}
 
