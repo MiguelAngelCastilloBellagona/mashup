@@ -51,12 +51,21 @@ public class ProductProviderServiceImplementation implements ProductProviderServ
 	}
 
 	@Override
-	public List<Product> findProducts(String keywords, String category, double minPrice, double maxPrice, int size,
-			Date modTimeFrom) throws ServiceException {
+	public List<Product> findProducts(String keywords, String category, double minPrice, double maxPrice, int size) throws ServiceException {
 		
 		List<Product> products = new ArrayList<Product>();
 		for(ProductProviderService pps : this.providers) {
-			products.addAll(pps.findProducts(keywords, category, minPrice, maxPrice, size, modTimeFrom));
+			products.addAll(pps.findProducts(keywords, category, minPrice, maxPrice, size));
+		}
+		return products;
+	}
+
+	@Override
+	public List<Product> findProductsBetweenDates(String keywords, String category, double minPrice, double maxPrice, int size,
+			Date minDate, Date maxDate) throws ServiceException {
+		List<Product> products = new ArrayList<Product>();
+		for(ProductProviderService pps : this.providers) {
+			products.addAll(pps.findProductsBetweenDates(keywords, category, minPrice, maxPrice, size, minDate, maxDate));
 		}
 		return products;
 	}

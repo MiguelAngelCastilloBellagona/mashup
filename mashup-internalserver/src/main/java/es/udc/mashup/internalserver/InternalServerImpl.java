@@ -26,6 +26,7 @@ public class InternalServerImpl {
 			throws IncorrectInternalSearchException {
 
 		return ProductServerFactory.getInternalProviderService().findProducts(keyWords, category, minPrice, maxPrice, 100, null, null);
+
 	}
 
 	@WebMethod(operationName = "searchProductsBetweenDates")

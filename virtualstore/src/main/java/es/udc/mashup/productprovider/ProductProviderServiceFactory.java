@@ -23,7 +23,7 @@ public class ProductProviderServiceFactory {
 	private ProductProviderServiceFactory() {
 	}
 
-	public static ProductProviderService getInternalProviderService() throws ServiceException {
+	public static ProductProviderService getProductProviderService() throws ServiceException {
 
 		if (instance == null) {
 			throw new ServiceException("Can not create instance of " + ProductProviderService.class);

@@ -17,23 +17,19 @@ public class CustomVirtualProductProviderService implements VirtualProductProvid
 	private static final long serialVersionUID = 1L;
 
 	@Override
-	public List<ProductTO> findProducts(String productName, String category, double minPrice, double maxPrice)
-			throws ServiceException {
+	public List<ProductTO> findProducts(String productName, String category, double minPrice, double maxPrice) throws ServiceException {
 
-		Date modTimeFrom = null;
 		int size = 100;
 
-		List<ProductTO> productos = TypeConversor.toProductsTO(ProductProviderServiceFactory
-				.getInternalProviderService()
-				.findProducts(productName, category, minPrice, maxPrice, size, modTimeFrom));
+		List<ProductTO> productos = TypeConversor.toProductsTO(ProductProviderServiceFactory.getProductProviderService().findProducts(
+				productName, category, minPrice, maxPrice, size));
 
 		List<String> names = new ArrayList<String>();
 
 		for (ProductTO p : productos)
 			names.add(p.getName());
 
-		Hashtable<String, List<Review>> reviews = ReviewProviderFacebookFactory.getReviewProviderService()
-				.searchReviews(names);
+		Hashtable<String, List<Review>> reviews = ReviewProviderFacebookFactory.getReviewProviderService().searchReviews(names);
 
 		for (ProductTO p : productos) {
 			p.setReviews(TypeConversor.toProductReviewTOs(reviews.get(p.getName())));
@@ -43,12 +39,25 @@ public class CustomVirtualProductProviderService implements VirtualProductProvid
 	}
 
 	@Override
-	public List<ProductTO> findProductsBeforeDate(String productName, String category, double minPrice,
-			double maxPrice, Date modTimeFrom) throws ServiceException {
+	public List<ProductTO> findProductsBetweenDates(String productName, String category, double minPrice, double maxPrice, Date minDate,
+			Date maxDate) throws ServiceException {
 
 		int size = 100;
 
-		return TypeConversor.toProductsTO(ProductProviderServiceFactory.getInternalProviderService().findProducts(
-				productName, category, minPrice, maxPrice, size, modTimeFrom));
+		List<ProductTO> productos = TypeConversor.toProductsTO(ProductProviderServiceFactory.getProductProviderService()
+				.findProductsBetweenDates(productName, category, minPrice, maxPrice, size, minDate, maxDate));
+
+		List<String> names = new ArrayList<String>();
+
+		for (ProductTO p : productos)
+			names.add(p.getName());
+
+		Hashtable<String, List<Review>> reviews = ReviewProviderFacebookFactory.getReviewProviderService().searchReviews(names);
+
+		for (ProductTO p : productos) {
+			p.setReviews(TypeConversor.toProductReviewTOs(reviews.get(p.getName())));
+		}
+
+		return productos;
 	}
 }

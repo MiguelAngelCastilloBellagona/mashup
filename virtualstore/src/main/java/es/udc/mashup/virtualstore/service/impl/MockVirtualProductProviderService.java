@@ -116,8 +116,8 @@ public class MockVirtualProductProviderService implements VirtualProductProvider
 	}
 
 	@Override
-	public List<ProductTO> findProductsBeforeDate(String productName, String category, double minPrice,
-			double maxPrice, Date modTimeFrom) throws ServiceException {
+	public List<ProductTO> findProductsBetweenDates(String productName, String category, double minPrice, double maxPrice, Date minDate,
+			Date maxDate) throws ServiceException {
 		// TODO Auto-generated method stub
 		return null;
 	}
