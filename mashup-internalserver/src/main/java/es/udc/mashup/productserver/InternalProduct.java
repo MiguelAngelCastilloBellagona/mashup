@@ -1,4 +1,4 @@
-package es.udc.mashup.internalserver;
+package es.udc.mashup.productserver;
 
 import java.util.Date;
 
