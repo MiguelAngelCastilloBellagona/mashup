@@ -1,8 +1,11 @@
 package es.udc.mashup.productprovider.internalprovider;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
+import java.util.Properties;
 
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
@@ -15,15 +18,33 @@ import es.udc.mashup.internalservice.wsdl.InternalServerProvider;
 import es.udc.mashup.internalservice.wsdl.InternalServerService;
 import es.udc.mashup.productprovider.Product;
 import es.udc.mashup.productprovider.ProductProviderService;
+import es.udc.mashup.productprovider.ProductProviderServiceFactory;
 import es.udc.ws.util.exceptions.ServiceException;
 
 public class InternalProviderServiceImplementation implements ProductProviderService {
 
-	private final String URL = "http://localhost:8081/mashup-internaserver/services/InternalServer";
+	private String url;
+	
+	private final static String URL_NAME_PARAMETER = "URL";
+	private static final String CONFIGURATION_FILE = "InternalProvider.properties";
 
 	private InternalServerService internalServerService;
 
 	public InternalProviderServiceImplementation() {
+		
+		Properties properties = new Properties();
+		InputStream inputStream = ProductProviderServiceFactory.class.getClassLoader().getResourceAsStream(CONFIGURATION_FILE);
+
+		try {
+			properties.load(inputStream);
+		} catch (IOException e1) {
+			System.out.println("File not found: " + CONFIGURATION_FILE);
+		}
+		try {
+			this.url = properties.getProperty(URL_NAME_PARAMETER);
+		} catch (Exception e) {
+		}
+		
 		this.internalServerService = new InternalServerService();
 	}
 
@@ -36,7 +57,7 @@ public class InternalProviderServiceImplementation implements ProductProviderSer
 
 		InternalServerProvider internalServerProvider = internalServerService.getInternalServerProviderPort();
 
-		((BindingProvider) internalServerProvider).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, URL);
+		((BindingProvider) internalServerProvider).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, this.url);
 
 		List<InternalProduct> internalList = null;
 
@@ -55,7 +76,7 @@ public class InternalProviderServiceImplementation implements ProductProviderSer
 			Date minDate, Date maxDate) throws ServiceException {
 		InternalServerProvider internalServerProvider = internalServerService.getInternalServerProviderPort();
 
-		((BindingProvider) internalServerProvider).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, URL);
+		((BindingProvider) internalServerProvider).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, this.url);
 
 		List<InternalProduct> internalList = null;
 
