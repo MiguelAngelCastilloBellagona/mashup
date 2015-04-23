@@ -11,7 +11,7 @@ public class ProductServerImpl implements ProductServer {
 
 	List<InternalProduct> list;
 
-	ProductServerImpl() {
+	protected ProductServerImpl() {
 		this.list = new ArrayList<InternalProduct>();
 
 		this.addProducts("Publicacion 1", "Descripcion 1", "Laptops", 200, 10, null);
