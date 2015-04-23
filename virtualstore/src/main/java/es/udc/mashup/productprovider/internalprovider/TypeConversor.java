@@ -8,23 +8,23 @@ import es.udc.mashup.productprovider.Product;
 
 public class TypeConversor {
 
-	public static List<Product> toProductsTO(List<InternalProduct> internlaProducts) {
+	public static List<Product> toProductsTO(List<InternalProduct> internalProducts) {
 		List<Product> product = new ArrayList<Product>();
-		if (internlaProducts!=null) for (InternalProduct l : internlaProducts) {
+		if (internalProducts!=null) for (InternalProduct l : internalProducts) {
 			product.add(toProduct(l));
 		}
 		return product;
 	}
 	
-	public static Product toProduct(InternalProduct internlaProduct) {
-		if (internlaProduct != null) {
+	public static Product toProduct(InternalProduct internalProduct) {
+		if (internalProduct != null) {
 			Product product = new Product();
-			product.setCategory(internlaProduct.getCategory());
-			product.setDate(internlaProduct.getDate().toGregorianCalendar().getTime());
-			product.setDescription(internlaProduct.getDescription());
-			product.setImageURL(internlaProduct.getImageURL());
-			product.setName(internlaProduct.getName());
-			product.setPrice(internlaProduct.getPrice());
+			product.setCategory(internalProduct.getCategory());
+			product.setDate(internalProduct.getDate().toGregorianCalendar().getTime());
+			product.setDescription(internalProduct.getDescription());
+			product.setImageURL(internalProduct.getImageURL());
+			product.setName(internalProduct.getName());
+			product.setPrice(internalProduct.getPrice()-internalProduct.getDescuento());
 			return product;
 		} else {
 			return null;
