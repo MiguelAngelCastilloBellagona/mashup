@@ -242,11 +242,11 @@ public class EbayProviderServiceImplementation implements ProductProviderService
 			itemFilter.add(maxPriceFilter);
 		}
 
-		if (maxDate != null) {
+		if (minDate != null) {
 			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss.SSS'Z'");
 			ItemFilter modTimeFromFilter = new ItemFilter();
 			modTimeFromFilter.setName(ItemFilterType.MOD_TIME_FROM);
-			modTimeFromFilter.getValue().add(dateFormat.format(maxDate));
+			modTimeFromFilter.getValue().add(dateFormat.format(minDate));
 			itemFilter.add(modTimeFromFilter);
 		}
 
