@@ -17,9 +17,12 @@ public class EntryProviderImpl implements EntryProvider{
 
 	@Override
 	public List<Entry> getEntrys() {
-		Date minDate = Calendar.getInstance().getTime();
+		Date maxDate = Calendar.getInstance().getTime();
+		Calendar cal = Calendar.getInstance();
+		cal.add(Calendar.DATE, -1);
+		Date minDate = cal.getTime();
 		String category = "Laptops";
-		List<ProductTO> products = getRealService().findProductsBetweenDates(null, category, 0, 0, minDate, null);
+		List<ProductTO> products = getRealService().findProductsBetweenDates(null, category, 0, 0, minDate, maxDate);
 		return TypeConversor.toEntrys(products);
 
 	}
