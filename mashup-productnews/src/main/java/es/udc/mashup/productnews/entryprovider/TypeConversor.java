@@ -23,6 +23,7 @@ public class TypeConversor {
 			entry.setTitle(product.getName());
 			String summary = product.getPrice() + " - " + product.getCategory() + " - " + product.getDescription();
 			entry.setSummary(summary);
+			entry.setUpdated(product.getDate());
 			return entry;
 		} else {
 			return null;
