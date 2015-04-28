@@ -32,14 +32,14 @@ public interface InternalServerProvider {
      * @param arg1
      * @param arg0
      * @return
-     *     returns java.util.List<es.udc.mashup.internalservice.wsdl.InternalProduct>
+     *     returns java.util.List<es.udc.mashup.internalservice.wsdl.InternalProductOutput>
      * @throws IncorrectInternalSearchException
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "searchProducts", targetNamespace = "http://ws.adoo.udc.es/", className = "es.udc.mashup.internalservice.wsdl.SearchProducts")
     @ResponseWrapper(localName = "searchProductsResponse", targetNamespace = "http://ws.adoo.udc.es/", className = "es.udc.mashup.internalservice.wsdl.SearchProductsResponse")
-    public List<InternalProduct> searchProducts(
+    public List<InternalProductOutput> searchProducts(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0,
         @WebParam(name = "arg1", targetNamespace = "")
@@ -60,14 +60,14 @@ public interface InternalServerProvider {
      * @param arg1
      * @param arg0
      * @return
-     *     returns java.util.List<es.udc.mashup.internalservice.wsdl.InternalProduct>
+     *     returns java.util.List<es.udc.mashup.internalservice.wsdl.InternalProductOutput>
      * @throws IncorrectInternalSearchException
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "searchProductsBetweenDates", targetNamespace = "http://ws.adoo.udc.es/", className = "es.udc.mashup.internalservice.wsdl.SearchProductsBetweenDates")
     @ResponseWrapper(localName = "searchProductsBetweenDatesResponse", targetNamespace = "http://ws.adoo.udc.es/", className = "es.udc.mashup.internalservice.wsdl.SearchProductsBetweenDatesResponse")
-    public List<InternalProduct> searchProductsBetweenDates(
+    public List<InternalProductOutput> searchProductsBetweenDates(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0,
         @WebParam(name = "arg1", targetNamespace = "")

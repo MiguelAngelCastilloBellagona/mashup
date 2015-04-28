@@ -3,28 +3,28 @@ package es.udc.mashup.productprovider.internalprovider;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.udc.mashup.internalservice.wsdl.InternalProduct;
+import es.udc.mashup.internalservice.wsdl.InternalProductOutput;
 import es.udc.mashup.productprovider.Product;
 
 public class TypeConversor {
 
-	public static List<Product> toProductsTO(List<InternalProduct> internalProducts) {
+	public static List<Product> toProductsTO(List<InternalProductOutput> internalProductOutputs) {
 		List<Product> product = new ArrayList<Product>();
-		if (internalProducts!=null) for (InternalProduct l : internalProducts) {
+		if (internalProductOutputs!=null) for (InternalProductOutput l : internalProductOutputs) {
 			product.add(toProduct(l));
 		}
 		return product;
 	}
 	
-	public static Product toProduct(InternalProduct internalProduct) {
-		if (internalProduct != null) {
+	public static Product toProduct(InternalProductOutput internalProductOutput) {
+		if (internalProductOutput != null) {
 			Product product = new Product();
-			product.setCategory(internalProduct.getCategory());
-			product.setDate(internalProduct.getDate().toGregorianCalendar().getTime());
-			product.setDescription(internalProduct.getDescription());
-			product.setImageURL(internalProduct.getImageURL());
-			product.setName(internalProduct.getName());
-			product.setPrice(internalProduct.getPrice()-internalProduct.getDescuento());
+			product.setCategory(internalProductOutput.getCategory());
+			product.setDate(internalProductOutput.getDate().toGregorianCalendar().getTime());
+			product.setDescription(internalProductOutput.getDescription());
+			product.setImageURL(internalProductOutput.getImageURL());
+			product.setName(internalProductOutput.getName());
+			product.setPrice(internalProductOutput.getPrice()-internalProductOutput.getDescuento());
 			return product;
 		} else {
 			return null;

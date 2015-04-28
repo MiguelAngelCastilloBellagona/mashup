@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="return" type="{http://ws.adoo.udc.es/}internalProduct" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="return" type="{http://ws.adoo.udc.es/}internalProductOutput" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,7 +35,7 @@ import javax.xml.bind.annotation.XmlType;
 public class SearchProductsResponse {
 
     @XmlElement(name = "return")
-    protected List<InternalProduct> _return;
+    protected List<InternalProductOutput> _return;
 
     /**
      * Gets the value of the return property.
@@ -55,13 +55,13 @@ public class SearchProductsResponse {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link InternalProduct }
+     * {@link InternalProductOutput }
      * 
      * 
      */
-    public List<InternalProduct> getReturn() {
+    public List<InternalProductOutput> getReturn() {
         if (_return == null) {
-            _return = new ArrayList<InternalProduct>();
+            _return = new ArrayList<InternalProductOutput>();
         }
         return this._return;
     }

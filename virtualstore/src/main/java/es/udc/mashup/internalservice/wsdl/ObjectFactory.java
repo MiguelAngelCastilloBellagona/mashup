@@ -38,6 +38,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link SearchProductsBetweenDates }
+     * 
+     */
+    public SearchProductsBetweenDates createSearchProductsBetweenDates() {
+        return new SearchProductsBetweenDates();
+    }
+
+    /**
      * Create an instance of {@link SearchProductsResponse }
      * 
      */
@@ -46,19 +54,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SearchProductsBetweenDatesResponse }
+     * Create an instance of {@link InternalProductOutput }
      * 
      */
-    public SearchProductsBetweenDatesResponse createSearchProductsBetweenDatesResponse() {
-        return new SearchProductsBetweenDatesResponse();
-    }
-
-    /**
-     * Create an instance of {@link InternalProduct }
-     * 
-     */
-    public InternalProduct createInternalProduct() {
-        return new InternalProduct();
+    public InternalProductOutput createInternalProductOutput() {
+        return new InternalProductOutput();
     }
 
     /**
@@ -70,11 +70,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SearchProductsBetweenDates }
+     * Create an instance of {@link SearchProductsBetweenDatesResponse }
      * 
      */
-    public SearchProductsBetweenDates createSearchProductsBetweenDates() {
-        return new SearchProductsBetweenDates();
+    public SearchProductsBetweenDatesResponse createSearchProductsBetweenDatesResponse() {
+        return new SearchProductsBetweenDatesResponse();
     }
 
     /**

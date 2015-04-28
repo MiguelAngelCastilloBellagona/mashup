@@ -1,8 +1,11 @@
 package es.udc.mashup.reviewprovider;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
+import java.util.Properties;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -13,6 +16,7 @@ import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.GetMethod;
 
+import es.udc.mashup.productprovider.ProductProviderServiceFactory;
 import es.udc.mashup.virtualstore.service.ProductReviewTO;
 import es.udc.mashup.virtualstore.service.ProductTO;
 import es.udc.ws.util.exceptions.ServiceException;
@@ -21,10 +25,31 @@ public class ReviewProviderFacebookImplementation implements ReviewProvider {
 
 	private static final long serialVersionUID = 1L;
 
-	private static final String apiUrl = "https://graph.facebook.com/";
-	private static final String facebookId = "780165292079936";
-	private static final String Acces_TOKKEN = "CAAGWXSaA4MsBAHCUV829NFDV4aDJPFscXqR6noamRIIKDFRFIuJCOWAYntQSPXsUOphBXqIw8n0H41GB9tXDKMlgF9DmXQsHXU6m3zQUcEO81NYx99PuhHWpkd9c6RQrJQEwaqkB6bYPBaacLt9cARHS4MWeuayG6JZC3vpwZC1i5nb2HQ6dEgvMLZByoZCmmxfKg3mWBZBT1ph7mWqzG";
+	private static final String CONFIGURATION_FILE = "FacebookProvider.properties";
+	
+	private String apiUrl;
+	private String facebookId;
+	private String Acces_TOKKEN;
+	
+	public ReviewProviderFacebookImplementation() {
+		Properties properties = new Properties();
+		InputStream inputStream = ProductProviderServiceFactory.class.getClassLoader().getResourceAsStream(CONFIGURATION_FILE);
 
+		try {
+			properties.load(inputStream);
+		} catch (IOException e1) {
+			System.out.println("File not found: " + CONFIGURATION_FILE);
+		}
+		try {
+			this.apiUrl = properties.getProperty("apiUrl");
+			this.facebookId = properties.getProperty("facebookId");
+			this.Acces_TOKKEN = properties.getProperty("Acces_TOKKEN");
+		} catch (Exception e) {
+			System.out.println("Config File ERROR");
+		}
+		
+	}
+	
 	@Override
 	public Hashtable<String,List<Review>> searchReviews(List<String> products) throws ServiceException {
 		
@@ -43,6 +68,7 @@ public class ReviewProviderFacebookImplementation implements ReviewProvider {
 				String jsonTxt = method.getResponseBodyAsString();
 
 				JSONObject json = (JSONObject) JSONSerializer.toJSON(jsonTxt);
+				
 				if (!json.isEmpty()) {
 					JSONArray muro = json.getJSONArray("data");
 
@@ -54,6 +80,8 @@ public class ReviewProviderFacebookImplementation implements ReviewProvider {
 
 							for (int x = 0; x < products.size(); x++) {
 								String productname = products.get(x);
+								
+								
 
 								if (productname.compareToIgnoreCase(producto.getString("message")) == 0) {
 									
@@ -90,10 +118,10 @@ public class ReviewProviderFacebookImplementation implements ReviewProvider {
 					}
 				}
 			} else {
-
+				System.out.println("StatusCode not OK");
 			}
 		} catch (Exception ex) {
-
+			System.out.println("Fallo en la conexión : " + ex.getMessage());
 		} finally {
 			method.releaseConnection();
 		}

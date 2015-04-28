@@ -8,12 +8,12 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java class for internalProduct complex type.
+ * <p>Java class for internalProductOutput complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="internalProduct">
+ * &lt;complexType name="internalProductOutput">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -33,7 +33,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "internalProduct", propOrder = {
+@XmlType(name = "internalProductOutput", propOrder = {
     "category",
     "date",
     "description",
@@ -42,7 +42,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "name",
     "price"
 })
-public class InternalProduct {
+public class InternalProductOutput {
 
     protected String category;
     protected XMLGregorianCalendar date;

@@ -13,7 +13,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.ws.BindingProvider;
 
 import es.udc.mashup.internalservice.wsdl.IncorrectInternalSearchException;
-import es.udc.mashup.internalservice.wsdl.InternalProduct;
+import es.udc.mashup.internalservice.wsdl.InternalProductOutput;
 import es.udc.mashup.internalservice.wsdl.InternalServerProvider;
 import es.udc.mashup.internalservice.wsdl.InternalServerService;
 import es.udc.mashup.productprovider.Product;
@@ -59,7 +59,7 @@ public class InternalProviderServiceImplementation implements ProductProviderSer
 
 		((BindingProvider) internalServerProvider).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, this.url);
 
-		List<InternalProduct> internalList = null;
+		List<InternalProductOutput> internalList = null;
 
 		try {
 			internalList = internalServerProvider.searchProducts(keywords, category, minPrice, maxPrice);
@@ -78,7 +78,7 @@ public class InternalProviderServiceImplementation implements ProductProviderSer
 
 		((BindingProvider) internalServerProvider).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, this.url);
 
-		List<InternalProduct> internalList = null;
+		List<InternalProductOutput> internalList = null;
 
 		GregorianCalendar minDateCalendar = new GregorianCalendar();
 		minDateCalendar.setTime(minDate);

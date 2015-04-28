@@ -30,7 +30,7 @@ public class CustomVirtualProductProviderService implements VirtualProductProvid
 			names.add(p.getName());
 
 		Hashtable<String, List<Review>> reviews = ReviewProviderFacebookFactory.getReviewProviderService().searchReviews(names);
-
+		
 		for (ProductTO p : productos) {
 			p.setReviews(TypeConversor.toProductReviewTOs(reviews.get(p.getName())));
 		}
