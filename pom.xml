@@ -144,7 +144,6 @@
 		<module>ui</module>
 		<module>virtualstore</module>
 		<module>mashup-internalserver</module>
-		<module>productnews</module>
 		<module>mashup-productnews</module>
 	</modules>
 </project>

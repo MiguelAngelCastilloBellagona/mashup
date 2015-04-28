@@ -24,7 +24,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>mashup-internalserver</finalName>
+		<finalName>mashup-productnews</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>

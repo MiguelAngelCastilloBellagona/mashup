@@ -61,7 +61,7 @@
 				<configuration>
 					<reload>manual</reload>
 					<webApp>
-						<contextPath>/mashup-internaserver</contextPath>
+						<contextPath>/mashup-internalserver</contextPath>
 					</webApp>
 					<connectors>
 						<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
