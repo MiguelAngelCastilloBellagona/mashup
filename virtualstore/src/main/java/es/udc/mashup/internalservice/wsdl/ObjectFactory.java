@@ -38,22 +38,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SearchProductsBetweenDatesResponse }
-     * 
-     */
-    public SearchProductsBetweenDatesResponse createSearchProductsBetweenDatesResponse() {
-        return new SearchProductsBetweenDatesResponse();
-    }
-
-    /**
-     * Create an instance of {@link SearchProductsBetweenDates }
-     * 
-     */
-    public SearchProductsBetweenDates createSearchProductsBetweenDates() {
-        return new SearchProductsBetweenDates();
-    }
-
-    /**
      * Create an instance of {@link SearchProducts }
      * 
      */
@@ -67,6 +51,22 @@ public class ObjectFactory {
      */
     public SearchProductsResponse createSearchProductsResponse() {
         return new SearchProductsResponse();
+    }
+
+    /**
+     * Create an instance of {@link SearchProductsBetweenDates }
+     * 
+     */
+    public SearchProductsBetweenDates createSearchProductsBetweenDates() {
+        return new SearchProductsBetweenDates();
+    }
+
+    /**
+     * Create an instance of {@link SearchProductsBetweenDatesResponse }
+     * 
+     */
+    public SearchProductsBetweenDatesResponse createSearchProductsBetweenDatesResponse() {
+        return new SearchProductsBetweenDatesResponse();
     }
 
     /**

@@ -27,6 +27,32 @@ public interface InternalServerProvider {
 
     /**
      * 
+     * @param arg3
+     * @param arg2
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns java.util.List<es.udc.mashup.internalservice.wsdl.InternalProductOutput>
+     * @throws IncorrectInternalSearchException
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "searchProducts", targetNamespace = "http://ws.adoo.udc.es/", className = "es.udc.mashup.internalservice.wsdl.SearchProducts")
+    @ResponseWrapper(localName = "searchProductsResponse", targetNamespace = "http://ws.adoo.udc.es/", className = "es.udc.mashup.internalservice.wsdl.SearchProductsResponse")
+    public List<InternalProductOutput> searchProducts(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        String arg1,
+        @WebParam(name = "arg2", targetNamespace = "")
+        double arg2,
+        @WebParam(name = "arg3", targetNamespace = "")
+        double arg3)
+        throws IncorrectInternalSearchException
+    ;
+
+    /**
+     * 
      * @param arg5
      * @param arg4
      * @param arg3
@@ -54,32 +80,6 @@ public interface InternalServerProvider {
         XMLGregorianCalendar arg4,
         @WebParam(name = "arg5", targetNamespace = "")
         XMLGregorianCalendar arg5)
-        throws IncorrectInternalSearchException
-    ;
-
-    /**
-     * 
-     * @param arg3
-     * @param arg2
-     * @param arg1
-     * @param arg0
-     * @return
-     *     returns java.util.List<es.udc.mashup.internalservice.wsdl.InternalProductOutput>
-     * @throws IncorrectInternalSearchException
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "searchProducts", targetNamespace = "http://ws.adoo.udc.es/", className = "es.udc.mashup.internalservice.wsdl.SearchProducts")
-    @ResponseWrapper(localName = "searchProductsResponse", targetNamespace = "http://ws.adoo.udc.es/", className = "es.udc.mashup.internalservice.wsdl.SearchProductsResponse")
-    public List<InternalProductOutput> searchProducts(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0,
-        @WebParam(name = "arg1", targetNamespace = "")
-        String arg1,
-        @WebParam(name = "arg2", targetNamespace = "")
-        double arg2,
-        @WebParam(name = "arg3", targetNamespace = "")
-        double arg3)
         throws IncorrectInternalSearchException
     ;
 
