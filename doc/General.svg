@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="72cm" height="42cm" viewBox="34 -156 1438 830" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="717" y="77" width="353.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="717" y="77" width="353.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="893.55" y="96">CustomVirtualProductProviderService</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="750" y="-17" width="285.15" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="750" y="-17" width="285.15" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="892.575" y="2">VirtualProductProviderService</text>
+    <rect style="fill: #ffffff" x="989.15" y="-19" width="54" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="989.15" y="-19" width="54" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="153" y="137" width="151.55" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="153" y="137" width="151.55" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="228.775" y="156">ReviewProvider</text>
+    <rect style="fill: #ffffff" x="258.55" y="135" width="54" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="258.55" y="135" width="54" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="36" y="229" width="381.05" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="36" y="229" width="381.05" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="226.525" y="248">ReviewProviderFacebookImplementation</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="372" y="351" width="333.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="372" y="351" width="333.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="538.7" y="370">ProductProviderService</text>
+    <rect style="fill: #ffffff" x="372" y="379" width="333.4" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="372" y="379" width="333.4" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375" y="393">+findProducts(): List&lt;Product&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375" y="409">+findProductsBetweenDates(): List&lt;Product&gt;</text>
+    <rect style="fill: #ffffff" x="659.4" y="349" width="54" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="659.4" y="349" width="54" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="571" y="536" width="368.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="571" y="536" width="368.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="755.05" y="555">InternalProviderServiceImplementation</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1032" y="533" width="340.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1032" y="533" width="340.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1202.15" y="552">EbayProviderServiceImplementation</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="53" y="535" width="367.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="53" y="535" width="367.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="236.65" y="554">ProductProviderServiceImplementation</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="892.575,30.2434 892.575,52 893.55,52 893.55,75.9927 "/>
+    <polygon style="fill: #ffffff" points="900.575,30.2434 892.575,14.2434 884.575,30.2434 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="900.575,30.2434 892.575,14.2434 884.575,30.2434 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="228.775,184.243 228.775,205 226.525,205 226.525,227.993 "/>
+    <polygon style="fill: #ffffff" points="236.775,184.243 228.775,168.243 220.775,184.243 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="236.775,184.243 228.775,168.243 220.775,184.243 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="538.7,434.244 538.7,483.5 755.05,483.5 755.05,534.993 "/>
+    <polygon style="fill: #ffffff" points="546.7,434.244 538.7,418.244 530.7,434.244 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="546.7,434.244 538.7,418.244 530.7,434.244 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="538.7,434.244 538.7,483 236.65,483 236.65,533.993 "/>
+    <polygon style="fill: #ffffff" points="546.7,434.244 538.7,418.244 530.7,434.244 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="546.7,434.244 538.7,418.244 530.7,434.244 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="732.634,383 994,383 994,547 1031.2,547 "/>
+    <polygon style="fill: #ffffff" points="732.634,375 716.634,383 732.634,391 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="732.634,375 716.634,383 732.634,391 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="446.472,549 456.306,549 456.306,619 755.05,619 755.05,565.001 "/>
+    <polygon style="fill: #ffffff" points="421.301,549 435.301,544.2 449.301,549 435.301,553.8 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="421.301,549 435.301,544.2 449.301,549 435.301,553.8 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="236.65,589.127 236.65,658 1202.15,658 1202.15,561.986 "/>
+    <polygon style="fill: #ffffff" points="236.65,563.956 241.45,577.956 236.65,591.956 231.85,577.956 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="236.65,563.956 241.45,577.956 236.65,591.956 231.85,577.956 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="689" y="256" width="410.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="689" y="256" width="410.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="894.2" y="275">ProductProviderServiceFactory</text>
+    <rect style="fill: #ffffff" x="689" y="284" width="410.4" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="689" y="284" width="410.4" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="692" y="298">-instance: ProductProviderService</text>
+    <rect style="fill: #ffffff" x="689" y="304" width="410.4" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="689" y="304" width="410.4" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="692" y="318">+getProductProviderService(): ProductProviderService</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="662.822,290 538.7,290 538.7,347.991 "/>
+    <polygon style="fill: #ffffff" points="687.994,290 673.994,294.8 659.994,290 673.994,285.2 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="687.994,290 673.994,294.8 659.994,290 673.994,285.2 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="58" y="-9" width="341.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="58" y="-9" width="341.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="228.55" y="10">ReviewProviderFacebookFactory</text>
+    <rect style="fill: #ffffff" x="58" y="19" width="341.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="58" y="19" width="341.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61" y="33">+instance: ReviewProvider</text>
+    <rect style="fill: #ffffff" x="58" y="39" width="341.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="58" y="39" width="341.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61" y="53">+getReviewProviderService(): ReviewProvider</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="228.55,85.1801 228.55,104 228.775,104 228.775,133.992 "/>
+    <polygon style="fill: #ffffff" points="228.55,60.0085 233.35,74.0085 228.55,88.0085 223.75,74.0085 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="228.55,60.0085 233.35,74.0085 228.55,88.0085 223.75,74.0085 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1007" y="-155" width="464.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1007" y="-155" width="464.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1239.15" y="-136">VirtualProductProviderServiceFactory</text>
+    <rect style="fill: #ffffff" x="1007" y="-127" width="464.3" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1007" y="-127" width="464.3" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1010" y="-113">+instance: VirtualProductProviderService</text>
+    <rect style="fill: #ffffff" x="1007" y="-107" width="464.3" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1007" y="-107" width="464.3" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1010" y="-93">+getVirtualProviderService(): VirtualProductProviderService</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1239.15,-60.8199 1239.15,-45.9999 892.575,-45.9999 892.575,-20.0083 "/>
+    <polygon style="fill: #ffffff" points="1239.15,-85.9915 1243.95,-71.9915 1239.15,-57.9915 1234.35,-71.9915 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1239.15,-85.9915 1243.95,-71.9915 1239.15,-57.9915 1234.35,-71.9915 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="715.995,91 562.05,91 562.05,25 406.81,25 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="419.458,20 403.458,25 419.458,30 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="893.55,106.007 893.55,176.499 894.2,176.499 894.2,248.286 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="889.2,235.639 894.2,251.639 899.2,235.639 "/>
+  </g>
+</svg>

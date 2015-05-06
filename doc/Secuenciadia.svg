@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="86cm" height="26cm" viewBox="137 18 1701 508" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffffff" cx="163.092" cy="38" rx="6" ry="6"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="163.092" cy="38" rx="6" ry="6"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="139.092" y1="50" x2="187.092" y2="50"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="163.092" y1="44" x2="163.092" y2="74"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="163.092" y1="74" x2="139.092" y2="100"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="163.092" y1="74" x2="187.092" y2="100"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="163.092" y="123.9">
+      <tspan x="163.092" y="123.9">Actor</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="160.608" y1="132" x2="160.608" y2="164"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="160.608" y1="504" x2="160.608" y2="526.242"/>
+    <rect style="fill: #ffffff" x="153.608" y="164" width="14" height="340"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="153.608" y="164" width="14" height="340"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="224" y="50" width="285.15" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="224" y="50" width="285.15" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="366.575" y="69">VirtualProductProviderService</text>
+    <rect style="fill: #ffffff" x="463.15" y="48" width="54" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="463.15" y="48" width="54" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="531.567" y="50.2968" width="284.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="531.567" y="50.2968" width="284.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="673.867" y="69.2968">ProducProviderServiceFactory</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1392.25" y="49.7802" width="306" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1392.25" y="49.7802" width="306" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1545.25" y="68.7802">ReviewProviderFacebookFactory</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="368.117" y1="63.6144" x2="368.117" y2="161.614"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="368.117" y1="481.614" x2="368.117" y2="524.946"/>
+    <rect style="fill: #ffffff" x="361.117" y="161.614" width="14" height="320"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="361.117" y="161.614" width="14" height="320"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="673.867" y1="64.2968" x2="673.867" y2="171.473"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="673.867" y1="211.473" x2="673.867" y2="515.868"/>
+    <rect style="fill: #ffffff" x="666.867" y="171.473" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="666.867" y="171.473" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1545.25" y1="63.7802" x2="1545.25" y2="352.545"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1545.25" y1="392.545" x2="1545.25" y2="511.977"/>
+    <rect style="fill: #ffffff" x="1538.25" y="352.545" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1538.25" y="352.545" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="344.118" y1="171.824" x2="167.608" y2="174"/>
+    <polygon style="fill: #000000" points="344.18,176.824 360.117,171.627 344.057,166.824 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="344.18,176.824 360.117,171.627 344.057,166.824 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="264.363" y="182.807">FindProducts</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="649.867" y1="181.482" x2="375.117" y2="181.614"/>
+    <polygon style="fill: #000000" points="649.869,186.482 665.867,181.474 649.865,176.482 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="649.869,186.482 665.867,181.474 649.865,176.482 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="520.992" y="191.544">getProductProviderService</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="830.354" y="44.4795" width="169.75" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="830.354" y="44.4795" width="169.75" height="36"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="915.229" y="66.3795">
+      <tspan x="915.229" y="66.3795">ProductProviderService</tspan>
+    </text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="840.354" y1="69.3795" x2="990.104" y2="69.3795"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="915.229" y1="62.4795" x2="915.229" y2="221.809"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="915.229" y1="341.809" x2="915.229" y2="517.165"/>
+    <rect style="fill: #ffffff" x="908.229" y="221.809" width="14" height="120"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="908.229" y="221.809" width="14" height="120"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="891.229" y1="231.803" x2="375.117" y2="231.614"/>
+    <polygon style="fill: #000000" points="891.227,236.803 907.229,231.809 891.231,226.803 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="891.227,236.803 907.229,231.809 891.231,226.803 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="641.673" y="241.712">FindProducts</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1037.87" y="46.6605" width="152.35" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1037.87" y="46.6605" width="152.35" height="36"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1114.05" y="68.5605">
+      <tspan x="1114.05" y="68.5605">EbayProviderService</tspan>
+    </text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="1047.87" y1="71.5605" x2="1180.22" y2="71.5605"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1208.2" y="47.751" width="170.2" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1208.2" y="47.751" width="170.2" height="36"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1293.3" y="69.651">
+      <tspan x="1293.3" y="69.651">InternalProviderService</tspan>
+    </text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="1218.2" y1="72.651" x2="1368.4" y2="72.651"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1114.05" y1="64.6605" x2="1114.05" y2="230.81"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1114.05" y1="270.81" x2="1114.05" y2="517.165"/>
+    <rect style="fill: #ffffff" x="1107.05" y="230.81" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1107.05" y="230.81" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1293.3" y1="65.751" x2="1293.3" y2="272.809"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1293.3" y1="312.809" x2="1293.3" y2="515.868"/>
+    <rect style="fill: #ffffff" x="1286.3" y="272.809" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1286.3" y="272.809" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1090.05" y1="240.902" x2="922.229" y2="241.809"/>
+    <polygon style="fill: #000000" points="1090.07,245.902 1106.05,240.815 1090.02,235.902 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1090.07,245.902 1106.05,240.815 1090.02,235.902 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1014.64" y="251.309">FindProducts</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1269.3" y1="282.763" x2="922.229" y2="281.809"/>
+    <polygon style="fill: #000000" points="1269.28,287.763 1285.3,282.807 1269.31,277.763 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1269.28,287.763 1285.3,282.807 1269.31,277.763 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1104.26" y="292.309">FindProducts</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="939.228" y1="261.717" x2="1107.05" y2="260.81"/>
+    <polygon style="fill: #000000" points="939.201,256.717 923.229,261.804 939.255,266.717 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="939.201,256.717 923.229,261.804 939.255,266.717 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="939.229" y1="301.856" x2="1286.3" y2="302.809"/>
+    <polygon style="fill: #000000" points="939.242,296.856 923.229,301.812 939.215,306.856 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="939.242,296.856 923.229,301.812 939.215,306.856 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="392.117" y1="201.606" x2="666.867" y2="201.473"/>
+    <polygon style="fill: #000000" points="392.115,196.606 376.117,201.614 392.12,206.606 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="392.115,196.606 376.117,201.614 392.12,206.606 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="392.117" y1="321.621" x2="908.229" y2="321.809"/>
+    <polygon style="fill: #000000" points="392.119,316.621 376.117,321.615 392.115,326.621 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="392.119,316.621 376.117,321.615 392.115,326.621 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1716.9" y="47.6226" width="119.55" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1716.9" y="47.6226" width="119.55" height="36"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1776.67" y="69.5226">
+      <tspan x="1776.67" y="69.5226">ReviewProvider</tspan>
+    </text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="1726.9" y1="72.5226" x2="1826.45" y2="72.5226"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1776.67" y1="65.6226" x2="1776.67" y2="411.619"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke-dasharray: 8; stroke: #000000" x1="1776.67" y1="451.619" x2="1776.67" y2="500.306"/>
+    <rect style="fill: #ffffff" x="1769.67" y="411.619" width="14" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1769.67" y="411.619" width="14" height="40"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1521.25" y1="362.531" x2="375.117" y2="361.614"/>
+    <polygon style="fill: #000000" points="1521.24,367.531 1537.25,362.544 1521.25,357.531 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1521.24,367.531 1537.25,362.544 1521.25,357.531 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="956.681" y="372.08">getReviewProviderService</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="383.967" y1="384.776" x2="1538.25" y2="382.545"/>
+    <polygon style="fill: #000000" points="383.957,379.776 367.967,384.807 383.977,389.776 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="383.957,379.776 367.967,384.807 383.977,389.776 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1752.67" y1="421.619" x2="375.117" y2="421.614"/>
+    <polygon style="fill: #000000" points="1752.67,426.619 1768.67,421.619 1752.67,416.619 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1752.67,426.619 1768.67,421.619 1752.67,416.619 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1072.39" y="431.617">searchReviews</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="392.117" y1="441.615" x2="1769.67" y2="441.619"/>
+    <polygon style="fill: #000000" points="392.117,436.615 376.117,441.614 392.117,446.615 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="392.117,436.615 376.117,441.614 392.117,446.615 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="184.607" y1="473.79" x2="361.117" y2="471.614"/>
+    <polygon style="fill: #000000" points="184.545,468.791 168.608,473.988 184.668,478.79 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="184.545,468.791 168.608,473.988 184.668,478.79 "/>
+  </g>
+</svg>

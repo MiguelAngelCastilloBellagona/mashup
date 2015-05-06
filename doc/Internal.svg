@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="71cm" height="26cm" viewBox="79 -27 1415 519" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="280" y="347" width="164" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="280" y="347" width="164" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="362" y="366">InternalProduct</text>
+    <rect style="fill: #ffffff" x="280" y="375" width="164" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="280" y="375" width="164" height="116"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="389">-name: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="405">-description: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="421">-Category: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="437">-price: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="453">-descuento: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="469">-imageUrl: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="283" y="485">-date: Date</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="220" y="253" width="283.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="220" y="253" width="283.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="361.7" y="272">ProductServerImplementation</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="80" y="104" width="564.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="80" y="104" width="564.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="362.2" y="123">ProductServer</text>
+    <rect style="fill: #ffffff" x="80" y="132" width="564.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="80" y="132" width="564.4" height="8"/>
+    <rect style="fill: #ffffff" x="80" y="140" width="564.4" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="80" y="140" width="564.4" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83" y="154">+findProducts(keywords:String,category:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83" y="170">              minPrice:double,maxPrice:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83" y="186">              size:int,minDate:Date,maxDate:Date): List&lt;InternalProduct&gt;</text>
+    <rect style="fill: #ffffff" x="598.4" y="102" width="54" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="598.4" y="102" width="54" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="188" y="-24" width="348.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="188" y="-24" width="348.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="362.4" y="-5">ProductServerFactory</text>
+    <rect style="fill: #ffffff" x="188" y="4" width="348.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="188" y="4" width="348.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="191" y="18">-instance: ProductServer</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="191" y1="23.6" x2="375.8" y2="23.6"/>
+    <rect style="fill: #ffffff" x="188" y="24" width="348.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="188" y="24" width="348.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="191" y="38">+getInternalProviderService(): ProductServer</text>
+    <rect style="fill: #ffffff" x="490.8" y="-26" width="54" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="490.8" y="-26" width="54" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="487" y="396" width="672.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="487" y="396" width="672.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="823.1" y="415">TypeConversor</text>
+    <rect style="fill: #ffffff" x="487" y="424" width="672.2" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="487" y="424" width="672.2" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="490" y="438">+toInternalProductOutput(product:InternalProduct): InternalProductOutput</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="490" y="454">+toInternalProductOutputs(products:List&lt;InternalProduct&gt;): List&lt;InternalProductOutput&gt;</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="890" y="59" width="602.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="890" y="59" width="602.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1191.45" y="78">InternalServerImpl</text>
+    <rect style="fill: #ffffff" x="890" y="87" width="602.9" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="890" y="87" width="602.9" height="8"/>
+    <rect style="fill: #ffffff" x="890" y="95" width="602.9" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="890" y="95" width="602.9" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="109">+searchProducts(keyWords:String,category:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="125">                minPrice:double,maxPrice:double): List&lt;InternalProductOutput&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="141">+searchProductsBetweenDates(keyWords:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="157">                            category:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="173">                            minPrice:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="189">                            maxPrice:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="205">                            minDate:Date,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="221">                            maxDate:Date): List&lt;InternalProductOutput&gt;</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1204.9" y="338" width="215.25" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1204.9" y="338" width="215.25" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1312.52" y="357">InternalProductOutput</text>
+    <rect style="fill: #ffffff" x="1204.9" y="366" width="215.25" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1204.9" y="366" width="215.25" height="116"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="380">-name: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="396">-description: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="412">-Category: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="428">-price: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="444">-descuento: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="460">-imageUrl: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="476">-date: Date</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="362.2,211.242 362.2,230.499 361.7,230.499 361.7,251.993 "/>
+    <polygon style="fill: #ffffff" points="370.2,211.242 362.2,195.242 354.2,211.242 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="370.2,211.242 362.2,195.242 354.2,211.242 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="362.4,70.1801 362.4,80.0014 362.2,80.0014 362.2,100.994 "/>
+    <polygon style="fill: #ffffff" points="362.4,45.0085 367.2,59.0085 362.4,73.0085 357.6,59.0085 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="362.4,45.0085 367.2,59.0085 362.4,73.0085 357.6,59.0085 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="361.7,307.179 361.7,320.999 362,320.999 362,345.991 "/>
+    <polygon style="fill: #ffffff" points="361.7,282.007 366.5,296.007 361.7,310.007 356.9,296.007 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="361.7,282.007 366.5,296.007 361.7,310.007 356.9,296.007 "/>
+  </g>
+</svg>

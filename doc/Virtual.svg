@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="87cm" height="54cm" viewBox="12 -354 1738 1078" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="624" y="57" width="541.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="624" y="57" width="541.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="894.65" y="76">CustomVirtualProductProviderService</text>
+    <rect style="fill: #ffffff" x="624" y="85" width="541.3" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="624" y="85" width="541.3" height="116"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="627" y="99">+findProducts(productName:String,category:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="627" y="115">              minPrice:double,maxPrice:double): List&lt;ProductTO&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="627" y="131">+findProductsBetweenDates(productName:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="627" y="147">                          category:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="627" y="163">                          minPrice:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="627" y="179">                          ,maxPrice:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="627" y="195">                          minDate:Date,maxDate:Date): List&lt;ProductTO&gt;</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="646" y="-155" width="495.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="646" y="-155" width="495.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="893.55" y="-136">VirtualProductProviderService</text>
+    <rect style="fill: #ffffff" x="646" y="-127" width="495.1" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="646" y="-127" width="495.1" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="649" y="-113">+findProducts(productName:String,category:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="649" y="-97">              minPrice:double,maxPrice:double): List&lt;ProductTO&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="649" y="-81">+findProductsBetweenDates(productName:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="649" y="-65">                          category:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="649" y="-49">                          minPrice:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="649" y="-33">                          maxPrice:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="649" y="-17">                          minDate:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="649" y="-1">                          maxDate:Date): List&lt;ProductTO&gt;</text>
+    <rect style="fill: #ffffff" x="1095.1" y="-157" width="54" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="1095.1" y="-157" width="54" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="13" y="113" width="441.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="13" y="113" width="441.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="233.6" y="132">ReviewProvider</text>
+    <rect style="fill: #ffffff" x="13" y="141" width="441.2" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="13" y="141" width="441.2" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="16" y="155">+searchReviews(products:List&lt;String&gt;): Hashtable&lt;String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="16" y="171">               List&lt;Review&gt;&gt;</text>
+    <rect style="fill: #ffffff" x="408.2" y="111" width="54" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="408.2" y="111" width="54" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="13" y="225" width="441.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="13" y="225" width="441.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="233.6" y="244">ReviewProviderFacebookImplementation</text>
+    <rect style="fill: #ffffff" x="13" y="253" width="441.2" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="13" y="253" width="441.2" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="16" y="267">+searchReviews(products:List&lt;String&gt;): Hashtable&lt;String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="16" y="283">               List&lt;Review&gt;&gt;</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="372" y="351" width="425.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="372" y="351" width="425.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="584.9" y="370">ProductProviderService</text>
+    <rect style="fill: #ffffff" x="372" y="379" width="425.8" height="148"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="372" y="379" width="425.8" height="148"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375" y="393">+findProducts(keywords:String,category:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375" y="409">              minPrice:double,maxPrice:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375" y="425">              size:int): List&lt;Product&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375" y="441">+findProductsBetweenDates(keywords:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375" y="457">                          category:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375" y="473">                          minPrice:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375" y="489">                          maxPrice:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375" y="505">                          size:int,minDate:Date,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375" y="521">                          maxDate:Date): List&lt;Product&gt;</text>
+    <rect style="fill: #ffffff" x="751.8" y="349" width="54" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="751.8" y="349" width="54" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="569" y="630" width="368.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="569" y="630" width="368.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="753.05" y="649">InternalProviderServiceImplementation</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1030" y="627" width="340.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1030" y="627" width="340.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1200.15" y="646">EbayProviderServiceImplementation</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="51" y="629" width="367.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="51" y="629" width="367.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="234.65" y="648">ProductProviderServiceImplementation</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="893.55,24.246 893.55,39.0005 894.65,39.0005 894.65,55.9911 "/>
+    <polygon style="fill: #ffffff" points="901.55,24.246 893.55,8.24596 885.55,24.246 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="901.55,24.246 893.55,8.24596 885.55,24.246 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="233.6,196.244 233.6,195.008 233.6,222.992 233.6,223.992 "/>
+    <polygon style="fill: #ffffff" points="241.6,196.244 233.6,180.244 225.6,196.244 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="241.6,196.244 233.6,180.244 225.6,196.244 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="584.9,546.242 584.9,586.499 753.05,586.499 753.05,628.993 "/>
+    <polygon style="fill: #ffffff" points="592.9,546.242 584.9,530.242 576.9,546.242 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="592.9,546.242 584.9,530.242 576.9,546.242 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="584.9,546.242 584.9,585.999 234.65,585.999 234.65,627.993 "/>
+    <polygon style="fill: #ffffff" points="592.9,546.242 584.9,530.242 576.9,546.242 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="592.9,546.242 584.9,530.242 576.9,546.242 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="825.027,439 994,439 994,641 1029,641 "/>
+    <polygon style="fill: #ffffff" points="825.027,431 809.027,439 825.027,447 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="825.027,431 809.027,439 825.027,447 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="444.476,643 456.306,643 456.306,689 753.05,689 753.05,658.996 "/>
+    <polygon style="fill: #ffffff" points="419.305,643 433.305,638.2 447.305,643 433.305,647.8 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="419.305,643 433.305,638.2 447.305,643 433.305,647.8 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="604.678" y="686"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="451.305" y="640"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="757.05" y="670.996"></text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="234.65,683.181 234.65,723 1200.15,723 1200.15,655.995 "/>
+    <polygon style="fill: #ffffff" points="234.65,658.01 239.45,672.01 234.65,686.01 229.85,672.01 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="234.65,658.01 239.45,672.01 234.65,686.01 229.85,672.01 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="717.4" y="720"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="245.65" y="670.01"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1204.15" y="667.995"></text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="689" y="256" width="410.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="689" y="256" width="410.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="894.2" y="275">ProductProviderServiceFactory</text>
+    <rect style="fill: #ffffff" x="689" y="284" width="410.4" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="689" y="284" width="410.4" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="692" y="298">-instance: ProductProviderService</text>
+    <rect style="fill: #ffffff" x="689" y="304" width="410.4" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="689" y="304" width="410.4" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="692" y="318">+getProductProviderService(): ProductProviderService</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="662.822,290 584.9,290 584.9,347.994 "/>
+    <polygon style="fill: #ffffff" points="687.994,290 673.994,294.8 659.994,290 673.994,285.2 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="687.994,290 673.994,294.8 659.994,290 673.994,285.2 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="636.447" y="287"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="655.994" y="287"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="588.9" y="343.994"></text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="63" y="-18" width="341.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="63" y="-18" width="341.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="233.55" y="1">ReviewProviderFacebookFactory</text>
+    <rect style="fill: #ffffff" x="63" y="10" width="341.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="63" y="10" width="341.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="66" y="24">+instance: ReviewProvider</text>
+    <rect style="fill: #ffffff" x="63" y="30" width="341.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="63" y="30" width="341.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="66" y="44">+getReviewProviderService(): ReviewProvider</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="233.55,76.1801 233.55,87.5 233.6,87.5 233.6,109.991 "/>
+    <polygon style="fill: #ffffff" points="233.55,51.0085 238.35,65.0085 233.55,79.0085 228.75,65.0085 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="233.55,51.0085 238.35,65.0085 233.55,79.0085 228.75,65.0085 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="233.575" y="84.5"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="244.55" y="63.0085"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="237.6" y="105.991"></text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1012" y="-353" width="464.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1012" y="-353" width="464.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1244.15" y="-334">VirtualProductProviderServiceFactory</text>
+    <rect style="fill: #ffffff" x="1012" y="-325" width="464.3" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1012" y="-325" width="464.3" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1015" y="-311">+instance: VirtualProductProviderService</text>
+    <rect style="fill: #ffffff" x="1012" y="-305" width="464.3" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1012" y="-305" width="464.3" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1015" y="-291">+getVirtualProviderService(): VirtualProductProviderService</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1244.15,-258.82 1244.15,-213.998 893.55,-213.998 893.55,-158.005 "/>
+    <polygon style="fill: #ffffff" points="1244.15,-283.991 1248.95,-269.991 1244.15,-255.991 1239.35,-269.991 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1244.15,-283.991 1248.95,-269.991 1244.15,-255.991 1239.35,-269.991 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1068.85" y="-216.998"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1255.15" y="-271.991"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="897.55" y="-162.005"></text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="622.992,129 518.048,129 518.048,16 411.81,16 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="424.458,11 408.458,16 424.458,21 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="894.65,202.009 894.65,224.5 894.2,224.5 894.2,248.286 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="889.2,235.639 894.2,251.639 899.2,235.639 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1246.09" y="71.7285" width="502.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1246.09" y="71.7285" width="502.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1497.49" y="90.7285">TypeConversor</text>
+    <rect style="fill: #ffffff" x="1246.09" y="99.7285" width="502.8" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1246.09" y="99.7285" width="502.8" height="8"/>
+    <rect style="fill: #ffffff" x="1246.09" y="107.728" width="502.8" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1246.09" y="107.728" width="502.8" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1249.09" y="121.728">+toProductsTO(products:List&lt;Product&gt;): List&lt;ProductTO&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1249.09" y="137.728">+toProductTO(product:Product): ProductTO</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1249.09" y="153.728">+toProductReviewTOs(reviews:List&lt;Review&gt;): List&lt;ProductReviewTO&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1249.09" y="169.728">+toProductReviewTO(review:Review): ProductReviewTO</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1166.31,129 1201.69,129 1201.69,123.728 1238.37,123.728 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1225.73,128.728 1241.73,123.728 1225.73,118.728 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1543.6" y="-95.6291" width="164" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1543.6" y="-95.6291" width="164" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1625.6" y="-76.6291">ProductTO</text>
+    <rect style="fill: #ffffff" x="1543.6" y="-67.6291" width="164" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1543.6" y="-67.6291" width="164" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1546.6" y="-53.6291">-name: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1546.6" y="-37.6291">-description: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1546.6" y="-21.6291">-Category: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1546.6" y="-5.62914">-price: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1546.6" y="10.3709">-imageUrl: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1546.6" y="26.3709">-date: Date</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1482.71" y="219.618" width="169.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1482.71" y="219.618" width="169.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1567.66" y="238.618">ProductReviewTO</text>
+    <rect style="fill: #ffffff" x="1482.71" y="247.618" width="169.9" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1482.71" y="247.618" width="169.9" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1485.71" y="261.618">-description: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1485.71" y="277.618">-reviewer: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1485.71" y="293.618">+score: int</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1262.11" y="219.777" width="164" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1262.11" y="219.777" width="164" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1344.11" y="238.777">Review</text>
+    <rect style="fill: #ffffff" x="1262.11" y="247.777" width="164" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1262.11" y="247.777" width="164" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1265.11" y="261.777">-description: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1265.11" y="277.777">-reviewer: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1265.11" y="293.777">+score: int</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1268.59" y="-80.9183" width="164" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1268.59" y="-80.9183" width="164" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1350.59" y="-61.9183">Product</text>
+    <rect style="fill: #ffffff" x="1268.59" y="-52.9183" width="164" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1268.59" y="-52.9183" width="164" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1271.59" y="-38.9183">-name: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1271.59" y="-22.9183">-description: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1271.59" y="-6.91835">-Category: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1271.59" y="9.08165">-price: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1271.59" y="25.0817">-imageUrl: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1271.59" y="41.0817">-date: Date</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1497.49,176.735 1497.49,193.753 1344.11,193.753 1344.11,212.067 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1339.11,199.419 1344.11,215.419 1349.11,199.419 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1497.49,176.735 1497.49,193.674 1567.66,193.674 1567.66,211.908 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1562.66,199.261 1567.66,215.261 1572.66,199.261 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1497.49,70.722 1497.49,-16.9183 1440.3,-16.9183 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1452.95,-21.9183 1436.95,-16.9183 1452.95,-11.9183 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1497.49,70.722 1497.49,56.0504 1625.6,56.0504 1625.6,40.084 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1630.6,52.7314 1625.6,36.7314 1620.6,52.7314 "/>
+  </g>
+</svg>
