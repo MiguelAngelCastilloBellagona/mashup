@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="71cm" height="26cm" viewBox="79 -27 1415 519" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="73cm" height="29cm" viewBox="79 -75 1452 570" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g>
     <rect style="fill: #ffffff" x="280" y="347" width="164" height="28"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="280" y="347" width="164" height="28"/>
@@ -49,44 +49,44 @@
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="490.8" y="-26" width="54" height="8"/>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="487" y="396" width="672.2" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="487" y="396" width="672.2" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="823.1" y="415">TypeConversor</text>
-    <rect style="fill: #ffffff" x="487" y="424" width="672.2" height="36"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="487" y="424" width="672.2" height="36"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="490" y="438">+toInternalProductOutput(product:InternalProduct): InternalProductOutput</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="490" y="454">+toInternalProductOutputs(products:List&lt;InternalProduct&gt;): List&lt;InternalProductOutput&gt;</text>
+    <rect style="fill: #ffffff" x="505" y="389" width="672.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="505" y="389" width="672.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="841.1" y="408">TypeConversor</text>
+    <rect style="fill: #ffffff" x="505" y="417" width="672.2" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="505" y="417" width="672.2" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="508" y="431">+toInternalProductOutput(product:InternalProduct): InternalProductOutput</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="508" y="447">+toInternalProductOutputs(products:List&lt;InternalProduct&gt;): List&lt;InternalProductOutput&gt;</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="890" y="59" width="602.9" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="890" y="59" width="602.9" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1191.45" y="78">InternalServerImpl</text>
-    <rect style="fill: #ffffff" x="890" y="87" width="602.9" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="890" y="87" width="602.9" height="8"/>
-    <rect style="fill: #ffffff" x="890" y="95" width="602.9" height="132"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="890" y="95" width="602.9" height="132"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="109">+searchProducts(keyWords:String,category:String,</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="125">                minPrice:double,maxPrice:double): List&lt;InternalProductOutput&gt;</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="141">+searchProductsBetweenDates(keyWords:String,</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="157">                            category:String,</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="173">                            minPrice:double,</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="189">                            maxPrice:double,</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="205">                            minDate:Date,</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893" y="221">                            maxDate:Date): List&lt;InternalProductOutput&gt;</text>
+    <rect style="fill: #ffffff" x="749" y="-74" width="602.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="749" y="-74" width="602.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1050.45" y="-55">InternalServerImpl</text>
+    <rect style="fill: #ffffff" x="749" y="-46" width="602.9" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="749" y="-46" width="602.9" height="8"/>
+    <rect style="fill: #ffffff" x="749" y="-38" width="602.9" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="749" y="-38" width="602.9" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="752" y="-24">+searchProducts(keyWords:String,category:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="752" y="-8">                minPrice:double,maxPrice:double): List&lt;InternalProductOutput&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="752" y="8">+searchProductsBetweenDates(keyWords:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="752" y="24">                            category:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="752" y="40">                            minPrice:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="752" y="56">                            maxPrice:double,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="752" y="72">                            minDate:Date,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="752" y="88">                            maxDate:Date): List&lt;InternalProductOutput&gt;</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="1204.9" y="338" width="215.25" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1204.9" y="338" width="215.25" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1312.52" y="357">InternalProductOutput</text>
-    <rect style="fill: #ffffff" x="1204.9" y="366" width="215.25" height="116"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1204.9" y="366" width="215.25" height="116"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="380">-name: String</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="396">-description: String</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="412">-Category: String</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="428">-price: double</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="444">-descuento: double</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="460">-imageUrl: String</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1207.9" y="476">-date: Date</text>
+    <rect style="fill: #ffffff" x="1313.9" y="350" width="215.25" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1313.9" y="350" width="215.25" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1421.52" y="369">InternalProductOutput</text>
+    <rect style="fill: #ffffff" x="1313.9" y="378" width="215.25" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1313.9" y="378" width="215.25" height="116"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1316.9" y="392">-name: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1316.9" y="408">-description: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1316.9" y="424">-Category: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1316.9" y="440">-price: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1316.9" y="456">-descuento: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1316.9" y="472">-imageUrl: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1316.9" y="488">-date: Date</text>
   </g>
   <g>
     <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="362.2,211.242 362.2,230.499 361.7,230.499 361.7,251.993 "/>
@@ -97,10 +97,32 @@
     <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="362.4,70.1801 362.4,80.0014 362.2,80.0014 362.2,100.994 "/>
     <polygon style="fill: #ffffff" points="362.4,45.0085 367.2,59.0085 362.4,73.0085 357.6,59.0085 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="362.4,45.0085 367.2,59.0085 362.4,73.0085 357.6,59.0085 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="362.3" y="77.0014"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="373.4" y="57.0085"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="366.2" y="96.9943"></text>
   </g>
   <g>
     <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="361.7,307.179 361.7,320.999 362,320.999 362,345.991 "/>
     <polygon style="fill: #ffffff" points="361.7,282.007 366.5,296.007 361.7,310.007 356.9,296.007 "/>
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="361.7,282.007 366.5,296.007 361.7,310.007 356.9,296.007 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="361.85" y="317.999"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="372.7" y="294.007"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="366" y="341.991"></text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="503.995,421 478.5,421 478.5,419 451.71,419 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="464.358,414 448.358,419 464.358,424 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1178.21,421 1241.55,421 1241.55,422 1306.19,422 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1293.54,427 1309.54,422 1293.54,417 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="747.991,10 746.991,10 554.806,10 552.511,10 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="565.158,5 549.158,10 565.158,15 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="1050.45,95.0052 1050.45,237.499 841.1,237.499 841.1,381.287 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="836.1,368.639 841.1,384.639 846.1,368.639 "/>
   </g>
 </svg>
