@@ -68,6 +68,7 @@ public class ProductNewsService extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// Set response content type
+		response.setStatus(HttpServletResponse.SC_OK);
 		response.setContentType("application/xml");
 
 		// Actual logic goes here.
