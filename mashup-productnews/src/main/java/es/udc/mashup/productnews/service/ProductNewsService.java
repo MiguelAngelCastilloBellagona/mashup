@@ -2,6 +2,8 @@ package es.udc.mashup.productnews.service;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
@@ -14,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.jdom.Attribute;
 import org.jdom.Document;
 import org.jdom.Element;
+import org.jdom.Namespace;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
 
@@ -29,7 +32,8 @@ public class ProductNewsService extends HttpServlet {
 
 	public Document lastProducts() {
 
-		Element products = new Element("feed");
+		Namespace namespace = Namespace.getNamespace("http://www.w3.org/2005/Atom");
+		Element products = new Element("feed", namespace);
 		Document doc = new Document(products);
 		doc.setRootElement(products);
 		Element title = new Element("title").setText("Last products");
@@ -40,7 +44,10 @@ public class ProductNewsService extends HttpServlet {
 		doc.getRootElement().addContent(link);
 		Element subtitle = new Element("subtitle").setText("Products added in the last 24 hours");
 		doc.getRootElement().addContent(subtitle);
-		Element updated = new Element("updated").setText(Calendar.getInstance().getTime().toString());
+		DateFormat formatter;
+        formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
+        String date = formatter.format(Calendar.getInstance().getTime());
+		Element updated = new Element("updated").setText(date);
 		doc.getRootElement().addContent(updated);
 		@SuppressWarnings("unused")
 		Element id = new Element("id").setText("PracticaADOO");
@@ -56,7 +63,7 @@ public class ProductNewsService extends HttpServlet {
 			entry.addContent(new Element("title").setText(elemento.getTitle()));
 			// product.addContent(new Element("link").setAttribute("href", ""));
 			entry.addContent(new Element("summary").setText(elemento.getSummary()));
-			if(elemento.getUpdated()!=null) entry.addContent(new Element("updated").setText(elemento.getUpdated().toString()));
+			if(elemento.getUpdated()!=null) entry.addContent(new Element("updated").setText(elemento.getUpdatedString()));
 			else entry.addContent(new Element("updated").setText("ERROR"));
 
 			doc.getRootElement().addContent(entry);

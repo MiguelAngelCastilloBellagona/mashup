@@ -1,5 +1,7 @@
 package es.udc.mashup.productnews.service;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Entry {
@@ -32,6 +34,12 @@ public class Entry {
 	}
 	public void setUpdated(Date updated) {
 		this.updated = updated;
+	}
+	
+	public String getUpdatedString(){
+		DateFormat formatter;
+        formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
+        return formatter.format(this.updated);
 	}
 
 }
