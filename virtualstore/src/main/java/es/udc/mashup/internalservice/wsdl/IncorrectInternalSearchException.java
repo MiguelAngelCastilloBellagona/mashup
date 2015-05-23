@@ -18,7 +18,7 @@ public class IncorrectInternalSearchException
     /**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 7236933718131495845L;
 	/**
      * Java type that goes as soapenv:Fault detail element.
      * 
