@@ -30,31 +30,7 @@ public class ProductNewsService extends HttpServlet {
 	public ProductNewsService() {
 	}
 
-	public Document lastProducts() {
-
-		Namespace namespace = Namespace.getNamespace("http://www.w3.org/2005/Atom");
-		Element products = new Element("feed", namespace);
-		Document doc = new Document(products);
-		doc.setRootElement(products);
-		Element title = new Element("title").setText("Last products");
-		doc.getRootElement().addContent(title);
-		Element link = new Element("link");
-		Attribute attr2 = new Attribute("href", "http://www.acme.com/lastproducts.atom");
-		products.setAttribute(attr2);
-		doc.getRootElement().addContent(link);
-		Element subtitle = new Element("subtitle").setText("Products added in the last 24 hours");
-		doc.getRootElement().addContent(subtitle);
-		DateFormat formatter;
-        formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
-        String date = formatter.format(Calendar.getInstance().getTime());
-		Element updated = new Element("updated").setText(date);
-		doc.getRootElement().addContent(updated);
-		@SuppressWarnings("unused")
-		Element id = new Element("id").setText("PracticaADOO");
-		// doc.getRootElement().addContent(id);
-
-		List<Entry> entrys = EntryProviderFactory.getEntryProvider().getEntrys();
-
+	private Document insertEntrys(Document doc, List<Entry> entrys){
 		Iterator<Entry> nombreIterator = entrys.iterator();
 		while (nombreIterator.hasNext()) {
 			Entry elemento = nombreIterator.next();
@@ -68,6 +44,33 @@ public class ProductNewsService extends HttpServlet {
 
 			doc.getRootElement().addContent(entry);
 		}
+		return doc;
+	}
+	
+	public Document lastProducts() {
+
+		Namespace namespace = Namespace.getNamespace("http://www.w3.org/2005/Atom");
+		Element products = new Element("feed", namespace);
+		Document doc = new Document(products);
+		doc.setRootElement(products);
+		Element title = new Element("title").setText("Last products");
+		doc.getRootElement().addContent(title);
+		Element link = new Element("link");
+		Attribute attr2 = new Attribute("href", "http://www.acme.com/lastproducts.atom");
+		link.setAttribute(attr2);
+		doc.getRootElement().addContent(link);
+		Element subtitle = new Element("subtitle").setText("Products added in the last 24 hours");
+		doc.getRootElement().addContent(subtitle);
+		DateFormat formatter;
+        formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
+        String date = formatter.format(Calendar.getInstance().getTime());
+		Element updated = new Element("updated").setText(date);
+		doc.getRootElement().addContent(updated);
+		// Element id = new Element("id").setText("PracticaADOO");
+		// doc.getRootElement().addContent(id);
+
+		List<Entry> entrys = EntryProviderFactory.getEntryProvider().getEntrys();
+		doc = insertEntrys(doc,entrys);
 
 		return doc;
 
